@@ -1,7 +1,8 @@
-a = int(input('a = '))
-b = int(input('b = '))
+x1 = int(input('Enter the first number: '))
+x2 = int(input('Enter the second number: '))
 
-if a > b:
-    print(a)
-else:
-    print(b)
+def sum(a, b):
+    z = a + b
+    print(f'Sum is {z}')
+
+sum(x1, x2)
