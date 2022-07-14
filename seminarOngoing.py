@@ -1,23 +1,23 @@
 from typing import List
 
 
-def getUserInput(inputType = None):
+def getUserInput(input_type = None):
 
     try:
-        match inputType.lower():
+        match input_type.lower():
             case 'integer':
-                userInput = int(input('Введите целое число: '))
+                user_input = int(input('Введите целое число: '))
             case 'float':
-                userInput = float(input('Введите вещественное число: '))
+                user_input = float(input('Введите вещественное число: '))
             case 'string':
-                userInput = input('Введите строку: ')
+                user_input = input('Введите строку: ')
             case _:
-                userInput = None
+                user_input = None
     except:
-        userInput = None
+        user_input = None
         print('Не удалось обработать введенное значение!')
     
-    return userInput
+    return user_input
 
-userInput = getUserInput('integer')
-print(f"Введенное значение: {userInput}")
+user_input = getUserInput('integer')
+print(f"Введенное значение: {user_input}")
