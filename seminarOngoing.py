@@ -1,8 +1,23 @@
-x1 = int(input('Enter the first number: '))
-x2 = int(input('Enter the second number: '))
+from typing import List
 
-def sum(a, b):
-    z = a + b
-    print(f'Sum is {z}')
 
-sum(x1, x2)
+def getUserInput(inputType = None):
+
+    try:
+        match inputType.lower():
+            case 'integer':
+                userInput = int(input('Введите целое число: '))
+            case 'float':
+                userInput = float(input('Введите вещественное число: '))
+            case 'string':
+                userInput = input('Введите строку: ')
+            case _:
+                userInput = None
+    except:
+        userInput = None
+        print('Не удалось обработать введенное значение!')
+    
+    return userInput
+
+userInput = getUserInput('integer')
+print(f"Введенное значение: {userInput}")
