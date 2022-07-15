@@ -4,6 +4,7 @@
 #Specific custom files
 file.txt
 issues.csv
+__pycache__/
 
 # User-specific files
 *.suo
