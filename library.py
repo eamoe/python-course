@@ -1,7 +1,7 @@
 from typing import List
 
 
-def getUserInput(input_type = None):
+def getUserInput(input_type = None, message = None):
 
     try:
         match input_type.lower():
@@ -10,7 +10,7 @@ def getUserInput(input_type = None):
             case 'float':
                 user_input = float(input('Введите вещественное число: '))
             case 'string':
-                user_input = input('Введите строку: ')
+                user_input = input(message)
             case _:
                 user_input = None
     except:
