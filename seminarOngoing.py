@@ -30,7 +30,7 @@ path = 'issues.csv'
 header = file_reader(path, True)
 
 #Read the file body
-#body = file_reader(path, False)
+body = file_reader(path, False)
 
 print(header)
 
