@@ -1,23 +1,38 @@
+from importlib.resources import path
+from pickle import TRUE
+from turtle import clear
 from typing import List
+import library
 
-
-def getUserInput(input_type = None):
-
-    try:
-        match input_type.lower():
-            case 'integer':
-                user_input = int(input('Введите целое число: '))
-            case 'float':
-                user_input = float(input('Введите вещественное число: '))
-            case 'string':
-                user_input = input('Введите строку: ')
-            case _:
-                user_input = None
-    except:
-        user_input = None
-        print('Не удалось обработать введенное значение!')
+#Reading a file
+def file_reader(path, is_header = False):
     
-    return user_input
+    file = open(path, 'r')    
+    lines = []
 
-user_input = getUserInput('integer')
-print(f"Введенное значение: {user_input}")
+    if is_header == True:
+        lines.append(file.readline().replace('\n', '').split(','))
+    else:
+        file.readline()
+        for line in file:
+            lines.append(line.replace('\n', '').split(','))
+    
+    file.close()
+    
+    return lines
+
+
+#Main Program
+
+path = 'issues.csv'
+
+#Read the file header
+header = file_reader(path, True)
+
+#Read the file body
+#body = file_reader(path, False)
+
+print(header)
+
+for line in body:
+    print(line)
