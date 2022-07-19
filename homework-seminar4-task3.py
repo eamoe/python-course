@@ -44,45 +44,57 @@ def all_games_list(games_number):
 
 #The function converts list of played games into the scores list:
 # [team_name, is_finished, is_victory, is_draw, is_defeat, game_score]
-def game_parser(games):
+def fill_stats(games):
 
-    scores = list()
+    game_stats_per_team = list()
 
     for game in games:
-        finished_game = 1
-
-        team1_name = game[0]
-        team1_goals = game[1]
-        team1_victory = 0
-        team1_defeat = 0
-        team1_draw = 0
-        team1_score = 0
         
-        team2_name = game[2]
-        team2_goals = game[3]
-        team2_victory = 0
-        team2_defeat = 0
-        team2_draw = 0
-        team2_score = 0
+        is_finished = 1
 
-        if int(team1_goals) > int(team2_goals):
-            team1_victory = 1
-            team1_score = 3
-            team2_defeat = 1
-        elif int(team1_goals) < int(team2_goals):
-            team2_victory = 1
-            team2_score = 3
-            team1_defeat = 1
-        elif int(team1_goals) == int(team2_goals):
-            team1_draw = 1
-            team2_draw = 1
-            team1_score = 1
-            team2_score = 1 
+        first_team_name = game[0]
+        first_team_goals = game[1]
+        first_team_victory = 0
+        first_team_defeat = 0
+        first_team_draw = 0
+        first_team_score = 0
+        
+        second_team_name = game[2]
+        second_team_goals = game[3]
+        second_team_victory = 0
+        second_team_defeat = 0
+        second_team_draw = 0
+        second_team_score = 0
 
-        scores.append([team1_name, finished_game, team1_victory, team1_draw, team1_defeat, team1_score])
-        scores.append([team2_name, finished_game, team2_victory, team2_draw, team2_defeat, team2_score])
+        if int(first_team_goals) > int(second_team_goals):
+            first_team_victory = 1
+            first_team_score = 3
+            second_team_defeat = 1
+        elif int(first_team_goals) < int(second_team_goals):
+            second_team_victory = 1
+            second_team_score = 3
+            first_team_defeat = 1
+        elif int(first_team_goals) == int(second_team_goals):
+            first_team_draw = 1
+            second_team_draw = 1
+            first_team_score = 1
+            second_team_score = 1 
+
+        game_stats_per_team.append([first_team_name,
+                                    is_finished,
+                                    first_team_victory,
+                                    first_team_draw,
+                                    first_team_defeat,
+                                    first_team_score])
+
+        game_stats_per_team.append([second_team_name,
+                                    is_finished,
+                                    second_team_victory,
+                                    second_team_draw,
+                                    second_team_defeat,
+                                    second_team_score])
     
-    return scores
+    return game_stats_per_team
 
 def create_stats_dictionary(scores):
     stats_dictionary = {}
@@ -106,6 +118,6 @@ def print_stats_dictionary(stats):
 # Main program
 games_number = get_games_number()
 all_games = all_games_list(games_number)
-game_scores = game_parser(all_games)
+game_scores = fill_stats(all_games)
 results_table = create_stats_dictionary(game_scores)
 print_stats_dictionary(results_table)
