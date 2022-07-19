@@ -45,59 +45,71 @@ def all_games_list(games_number):
     
     return all_games
 
+#The function converts list of played games into the scores list:
+# [team_name, is_finished, is_victory, is_draw, is_defeat, game_score]
+def game_parser(games):
+
+    scores = list()
+
+    for game in games:
+        team1_name = game[0]
+        team1_goals = game[1]
+        team2_name = game[2]
+        team2_goals = game[3]
+
+        finished_game = 1
+
+        team1_victory = 0
+        team1_defeat = 0
+        team1_draw = 0
+        team1_score = 0
+    
+        team2_victory = 0
+        team2_defeat = 0
+        team2_draw = 0
+        team2_score = 0
+
+        if int(team1_goals) > int(team2_goals):
+            team1_victory = 1
+            team2_defeat = 1
+            team1_score = 3
+        if int(team1_goals) < int(team2_goals):
+            team2_victory = 1
+            team1_defeat = 1
+            team2_score = 3
+        if int(team1_goals) == int(team2_goals):
+            team1_draw = 1
+            team2_draw = 1
+            team1_score = 1
+            team2_score = 1 
+
+        scores.append([team1_name, finished_game, team1_victory, team1_draw, team1_defeat, team1_score])
+        scores.append([team2_name, finished_game, team2_victory, team2_draw, team2_defeat, team2_score])
+    
+    return scores
+
+def create_stats_dictionary(scores):
+    stats_dictionary = {}
+    for element in scores:
+        team_name = element[0]
+        if team_name in stats_dictionary:
+            stats_dictionary[team_name][0] = int(stats_dictionary[team_name][0]) + int(element[1])
+            stats_dictionary[team_name][1] = int(stats_dictionary[team_name][1]) + int(element[2])
+            stats_dictionary[team_name][2] = int(stats_dictionary[team_name][2]) + int(element[3])
+            stats_dictionary[team_name][3] = int(stats_dictionary[team_name][3]) + int(element[4])
+            stats_dictionary[team_name][4] = int(stats_dictionary[team_name][4]) + int(element[5])
+        else:
+            stats_dictionary[team_name] = [int(element[1]), int(element[2]), int(element[3]), int(element[4]), int(element[5])]
+    
+    return stats_dictionary
+
+def print_stats_dictionary(stats):
+    for key, value in results_table.items():
+        print(f"{key}: {value[0]} {value[1]} {value[2]} {value[3]} {value[4]}")
 
 # Main program
 games_number = get_games_number()
-
 all_games = all_games_list(games_number)
-
-game_scores = list()
-for game in all_games:
-    team1_name = game[0]
-    team1_goals = game[1]
-    team2_name = game[2]
-    team2_goals = game[3]
-
-    finished_game = 1
-
-    team1_victory = 0
-    team1_defeat = 0
-    team1_draw = 0
-    team1_score = 0
-    
-    team2_victory = 0
-    team2_defeat = 0
-    team2_draw = 0
-    team2_score = 0
-
-    if int(team1_goals) > int(team2_goals):
-        team1_victory = 1
-        team2_defeat = 1
-        team1_score = 3
-    if int(team1_goals) < int(team2_goals):
-        team2_victory = 1
-        team1_defeat = 1
-        team2_score = 3
-    if int(team1_goals) == int(team2_goals):
-        team1_draw = 1
-        team2_draw = 1
-        team1_score = 1
-        team2_score = 1 
-
-    game_scores.append([team1_name, finished_game, team1_victory, team1_draw, team1_defeat, team1_score])
-    game_scores.append([team2_name, finished_game, team2_victory, team2_draw, team2_defeat, team2_score])
-
-results_table = {}
-for element in game_scores:
-    team_name = element[0]
-    if team_name in results_table:
-        results_table[team_name][0] = int(results_table[team_name][0]) + element[1]
-        results_table[team_name][1] = int(results_table[team_name][1]) + element[2]
-        results_table[team_name][2] = int(results_table[team_name][2]) + element[3]
-        results_table[team_name][3] = int(results_table[team_name][3]) + element[4]
-        results_table[team_name][4] = int(results_table[team_name][4]) + element[5]
-    else:
-        results_table[team_name] = [element[1], element[2], element[3], element[4], element[5]]
-
-for key, value in results_table.items():
-    print(f"{key}: {value[0]} {value[1]} {value[2]} {value[3]} {value[4]}")
+game_scores = game_parser(all_games)
+results_table = create_stats_dictionary(game_scores)
+print_stats_dictionary(results_table)
