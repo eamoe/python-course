@@ -21,28 +21,25 @@
 #Зенит:2 1 0 1 3
 #Локомотив:2 2 0 0 6
 
-#Get number of played games
-def get_games_number():
-    
-    games_number = int(input("Введите количество сыгранных игр: "))
 
+#Get number of played games
+def get_games_number():  
+    games_number = int(input("Введите количество сыгранных игр: "))
     return games_number
+
 
 #Get results of a single game
 def get_game_result(game_number):
-    
     game_result = list()
-    print(f"Игра {game_number}:")
-    game_result = str(input("")).split(";")
-    
+    game_result = str(input(f"Игра {game_number}: ")).split(";")
     return game_result
+
 
 #Get list of all played games
 def all_games_list(games_number):
     all_games = list()
     for game in range(games_number):
-        all_games.append(get_game_result(game + 1))
-    
+        all_games.append(get_game_result(game + 1))   
     return all_games
 
 #The function converts list of played games into the scores list:
@@ -52,18 +49,17 @@ def game_parser(games):
     scores = list()
 
     for game in games:
-        team1_name = game[0]
-        team1_goals = game[1]
-        team2_name = game[2]
-        team2_goals = game[3]
-
         finished_game = 1
 
+        team1_name = game[0]
+        team1_goals = game[1]
         team1_victory = 0
         team1_defeat = 0
         team1_draw = 0
         team1_score = 0
-    
+        
+        team2_name = game[2]
+        team2_goals = game[3]
         team2_victory = 0
         team2_defeat = 0
         team2_draw = 0
@@ -71,13 +67,13 @@ def game_parser(games):
 
         if int(team1_goals) > int(team2_goals):
             team1_victory = 1
-            team2_defeat = 1
             team1_score = 3
-        if int(team1_goals) < int(team2_goals):
+            team2_defeat = 1
+        elif int(team1_goals) < int(team2_goals):
             team2_victory = 1
-            team1_defeat = 1
             team2_score = 3
-        if int(team1_goals) == int(team2_goals):
+            team1_defeat = 1
+        elif int(team1_goals) == int(team2_goals):
             team1_draw = 1
             team2_draw = 1
             team1_score = 1
