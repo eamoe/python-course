@@ -90,3 +90,53 @@ dictionary = \
     for k in dictionary.keys():
         print(k)
 ```
+
+## Lesson 3
+Lambda-функции
+
+```python
+#def sum(x, y):
+#    return x + y
+
+sum = lambda x, y: x + y
+
+def multiply(x, y):
+    return x * y
+
+def calc(operation, x, y):
+    print(operation(x, y))
+
+calc(sum, 4, 5)
+```
+
+List Comprehension
+```python
+list = [i for i in range(1, 20) if i % 2 == 0]
+print(list)
+```
+
+Map
+```python
+li = [x for x in range(1, 20)]
+i = list(map(lambda x: x + 10 li))
+print(li)
+```
+
+Filter
+```python
+data = [x for x in range(1, 20)]
+
+result = list(filter(lambda x: not x % 2, data))
+
+print(result)
+```
+
+Zip
+```python
+users = ['user_1', 'user_2', 'user_3']
+ids = [1, 2, 3]
+
+data = list(zip(users, ids))
+
+print(data)
+```
