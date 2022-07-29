@@ -108,11 +108,15 @@ def initialize_complex_number(complex_number_str):
     
     if complex_number_str.find('+') != -1:
         temp_list = complex_number_str.split('+')
+        real = float(temp_list[0])
+        imag = float(temp_list[1][:-1])
     elif complex_number_str.find('-') != -1:
         temp_list = complex_number_str.split('-')
+        real = float(temp_list[0])
+        imag = float(temp_list[1][:-1])*(-1)
+        
 
-    real = float(temp_list[0])
-    imag = float(temp_list[1][:-1])
+    
 
     complex_number = complex(real, imag)
 
