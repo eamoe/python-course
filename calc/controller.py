@@ -9,8 +9,7 @@ def start_calc():
 
     while True:
         # Get current calc state
-        button, value = form.Read()
-        
+        button, mode_value = form.Read()
         # Clear button handler
         if button == constants.clear_button_text:
             data = constants.empty_string
@@ -27,7 +26,7 @@ def start_calc():
 
         # Combobox handler
         elif button == constants.combobox_key:
-            mode_key = view.get_mode_key(view.get_mode_value(mode_key), form)
+            mode_key = view.get_mode_key(mode_value[constants.combobox_key], form)
         
         # Calculate button handler
         elif button == constants.calculate_button_text:
