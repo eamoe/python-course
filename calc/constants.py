@@ -9,3 +9,4 @@ remove_button_text = '«'
 max_input_length = 25
 calculate_button_text = '='
 quit_button_text = 'Quit'
+imaginary_unit = 'i'
