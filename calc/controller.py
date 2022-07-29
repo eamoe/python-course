@@ -1,6 +1,7 @@
 import model
 import view
 import constants
+import logger
 
 def start_calc():
     form = view.create_calc_form()
@@ -30,8 +31,10 @@ def start_calc():
         
         # Calculate button handler
         elif button == constants.calculate_button_text:
+            input_data = data
             data = model.calculate(data, mode_key)
             view.update_form_data(form, data)
+            logger.data_logger(input_data, data)
         
         # Close window handler
         elif button == constants.quit_button_text or button == None:
