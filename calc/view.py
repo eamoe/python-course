@@ -43,7 +43,8 @@ def get_layout():
 
 		        [Txt(constants.empty_string * 10)],
 
-		        [ReadFormButton(constants.clear_button_text), ReadFormButton(constants.remove_button_text), ReadFormButton('i')],
+                [ReadFormButton(constants.clear_button_text), ReadFormButton(constants.remove_button_text)],
+                [ReadFormButton('('), ReadFormButton(')'), ReadFormButton('i')],
 		        [ReadFormButton('+'), ReadFormButton('-'), ReadFormButton('/'), ReadFormButton('*')],
                 [ReadFormButton('6'), ReadFormButton('7'), ReadFormButton('8'), ReadFormButton('9')],
                 [ReadFormButton('2'), ReadFormButton('3'), ReadFormButton('4'), ReadFormButton('5')],

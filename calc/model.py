@@ -1,5 +1,7 @@
 from email.policy import default
-from statistics import mode
+
+# importing "cmath" for complex number operations
+import cmath
 
 
 def calculate(data, mode_key = 0):
@@ -7,13 +9,23 @@ def calculate(data, mode_key = 0):
         case 0:
             return calc_real_numbers(data)
         case 1:
-            return "Rational"
+            return calc_rational_numbers(data)
         case 2:
-            return "Imaginary"
+            return calc_complex_numbers(data)
         case default:
             return "No mode"
+
 
 def calc_real_numbers(data):
     result = eval(data)
     result = str(round(float(result), 3))
     return result
+
+
+def calc_rational_numbers(data):
+    return 1
+
+
+def calc_complex_numbers(data):
+    
+    return 1
