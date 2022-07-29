@@ -5,6 +5,6 @@
 # Всё выложить на гитхаб со скриншотами успешной работы приложения во всех реализованных режимах.
 
 
-import controller as c
+import controller
 
-c.button_click()
+controller.start_calc()
