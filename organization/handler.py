@@ -3,6 +3,7 @@ import constants
 import creator
 import os
 import reader
+import remover
 
 clear = lambda: os.system('clear')
 
@@ -36,5 +37,5 @@ def command_handler(main_menu_item, sub_menu_item):
         input("Нажмите Enter, чтобы продолжить!")
     # Remove an item
     elif sub_menu_item == 3:
-        print(f"Удалили запись из таблицы: {constants.main_menu_items[main_menu_item]}")
+        remover.delete_item(file_name)
         input("Нажмите Enter, чтобы продолжить!")
