@@ -37,5 +37,6 @@ def command_handler(main_menu_item, sub_menu_item):
         input("Нажмите Enter, чтобы продолжить!")
     # Remove an item
     elif sub_menu_item == 3:
-        remover.delete_item(file_name)
+        message = remover.delete_item(file_name)
+        print(f"\n{message}")
         input("Нажмите Enter, чтобы продолжить!")
