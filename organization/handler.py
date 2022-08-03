@@ -2,6 +2,7 @@ from turtle import clear
 import constants
 import creator
 import os
+import reader
 
 clear = lambda: os.system('clear')
 
@@ -21,6 +22,7 @@ def command_handler(main_menu_item, sub_menu_item):
     file_name = get_file_name(main_menu_item)
     # Show list of items
     if sub_menu_item == 0:
+        reader.show_items(file_name)
         print(f"Вот список данных из таблицы: {constants.main_menu_items[main_menu_item]}")
         input("Нажмите Enter, чтобы продолжить!")
     # Create a new item
