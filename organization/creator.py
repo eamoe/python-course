@@ -56,6 +56,6 @@ def create_employee(path):
     created = str(dt.now().date()) + ' ' + str(dt.now().strftime('%H:%M:%S'))
     updated = str(dt.now().date()) + ' ' + str(dt.now().strftime('%H:%M:%S'))
     with open(path, 'a') as file:
-        file.write('{};{};{};{};{};{}\n'
-                    .format(employee_id, last_name, first_name, middle_name, department_id, salary_id))
+        file.write('{};{};{};{};{};{};{};{}\n'
+                    .format(employee_id, last_name, first_name, middle_name, department_id, salary_id, created, updated))
     return f"Создана новая запись в справочнике сотрудников:\n\nID: {employee_id}\nФамилия: {last_name}\nИмя: {first_name}\nОтчество: {middle_name}\nКод департамента: {department_id}\nКод оклада: {salary_id}"
