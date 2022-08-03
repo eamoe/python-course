@@ -1,4 +1,5 @@
-dept_header = "   ID   |       Created        |        Updated        |     Name     "
+dept_header     = "   ID   |       Created        |        Updated        |     Name     "
+salaries_header = "   ID   |       Created        |        Updated        |  Amount  "
 
 def read_departments(path):
     data = open(path, 'r')
@@ -16,8 +17,6 @@ def show_items(file_name):
     if file_name == "salaries":
         print(salaries_header)
         read_salaries(path)
-
-salaries_header = "   ID   |       Created        |        Updated        |  Amount  "
 
 def read_salaries(path):
     data = open(path, 'r')
