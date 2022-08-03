@@ -4,6 +4,7 @@ import creator
 import os
 import reader
 import remover
+import updater
 
 clear = lambda: os.system('clear')
 
@@ -33,7 +34,8 @@ def command_handler(main_menu_item, sub_menu_item):
         input(f"{message}\nНажмите Enter, чтобы продолжить!")
     # Update an item
     elif sub_menu_item == 2:
-        print(f"Изменили запись в таблице: {constants.main_menu_items[main_menu_item]}")
+        message = updater.update_item(file_name)
+        print(f"\n{message}")
         input("Нажмите Enter, чтобы продолжить!")
     # Remove an item
     elif sub_menu_item == 3:

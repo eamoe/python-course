@@ -23,13 +23,3 @@ def delete(path, file_name):
             else:
                 file.write(line)
     return f"Запись с кодом {dept_id} удалена!"
-
-
-
-
-def delete_salary():
-    return 1
-
-
-def delete_employee():
-    return 1
