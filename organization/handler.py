@@ -22,9 +22,9 @@ def command_handler(main_menu_item, sub_menu_item):
     file_name = get_file_name(main_menu_item)
     # Show list of items
     if sub_menu_item == 0:
+        print(f"{constants.main_menu_items[main_menu_item].upper()}\n\n")
         reader.show_items(file_name)
-        print(f"Вот список данных из таблицы: {constants.main_menu_items[main_menu_item]}")
-        input("Нажмите Enter, чтобы продолжить!")
+        input("\nНажмите Enter, чтобы продолжить!")
     # Create a new item
     elif sub_menu_item == 1:
         message = creator.create_item(file_name)
