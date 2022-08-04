@@ -5,6 +5,8 @@
 file.txt
 issues.csv
 __pycache__/
+api_keys.py
+.folder/
 
 # User-specific files
 *.suo
