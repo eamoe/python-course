@@ -1,0 +1,1 @@
+player=1;remaining_candies=0;max_take=28
