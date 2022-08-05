@@ -1,0 +1,1990 @@
+
+
+
+
+  
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  
+  <style>.async-hide { opacity: 0 !important} </style>
+  <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+  h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+  (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+  })(window,document.documentElement,'async-hide','dataLayer',4000,
+  {'GTM-N6BW6CW':true});</script>
+
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-3482494-1', 'auto', {allowLinker: true});
+    ga('require', 'GTM-N6BW6CW'); //Insert Optimize Container ID
+  </script>
+
+
+
+  
+  <script src="//cdn.iubenda.com/cs/ccpa/stub.js"></script>
+  <script type="text/javascript">
+  var _iub = _iub || [];
+  _iub.csConfiguration = {"lang":"en","siteId":861863,"enableCcpa":true,"countryDetection":true,"gdprAppliesGlobally":false,"cookiePolicyId":8171762, "banner":{"position":"float-bottom-center"}};
+  </script><script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+
+
+
+
+
+<meta charset='utf-8'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>The Mountain Goat Software Blog</title>
+<meta name="description" content="Learn agile and Scrum tips and techniques from expert ScrumMaster, educator and author Mike Cohn and the staff of Mountain Goat Software." />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="index,follow,archive" />
+
+<meta name="author" content="Mike Cohn">
+<link rel="publisher" href="https://plus.google.com/+Mountaingoatsoftware" />
+<link rel="canonical" href="https://www.mountaingoatsoftware.com/blog" />
+
+<!-- Twitter Card data -->
+<meta name="twitter:site" content="@mikewcohn" />
+<meta name="twitter:title" content="The Mountain Goat Software Blog" />
+<meta name="twitter:description" content="Learn agile and Scrum tips and techniques from expert ScrumMaster, educator and author Mike Cohn and the staff of Mountain Goat Software." />
+<meta name="twitter:creator" content="@mikewcohn" />
+
+  <meta name="twitter:card" content="summary">
+
+
+<!-- Open Graph data -->
+<meta property="og:title" content="The Mountain Goat Software Blog" />
+<meta property="og:description" content="Learn agile and Scrum tips and techniques from expert ScrumMaster, educator and author Mike Cohn and the staff of Mountain Goat Software." /> 
+<meta property="og:site_name" content="Mountain Goat Software" />
+
+
+  <meta property="og:type" content="article" />
+
+
+
+<meta property="og:url" content="https://www.mountaingoatsoftware.com/blog" />
+
+
+
+
+
+  <meta name="robots" content="index,follow,archive" />
+
+
+
+<meta name="verify-v1" content="Kqva5TxliwVWnbBUQht/VFpJsIJ7Z29JfRHCvHWLPuI=" />
+
+
+
+  <link rel="alternate" type="application/rss+xml" title="Mike Cohn&#039;s Blog &#8211; Succeeding With Agile® RSS Feed" href="https://www.mountaingoatsoftware.com/blog/rss" />
+
+
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-C9JS');</script>
+
+
+<script type="text/javascript">
+  var _dcq = _dcq || [];
+  var _dcs = _dcs || {};
+  _dcs.account = '3499648';
+
+  (function() {
+    var dc = document.createElement('script');
+    dc.type = 'text/javascript'; dc.async = true;
+    dc.src = '//tag.getdrip.com/3499648.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(dc, s);
+  })();
+</script>
+
+
+
+
+  
+    <link rel="stylesheet" href="/build/stylesheets/vendor.0622180942.css">
+    <link rel="stylesheet" href="/build/stylesheets/main.0622180942.css">
+  
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  
+  <link rel="stylesheet" href="/build/stylesheets/pages/blog.0401154034.css">
+
+  
+
+
+
+  
+
+</head>
+
+<body class=" blog sticky-header">
+  
+  <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-C9JS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+
+  <div class="wrapper">
+    
+
+  
+    
+  
+
+    <header class="site-header" role="banner">
+      <div class="logo" id='logo'><a href="/"><img src="/mgs_assets/images/v4/logo.svg" alt=""></a></div>
+      <nav role="navigation" id="nav">
+  <ul class="primary">
+    <li class="nav-individual">
+      <span>For Individuals <svg class="icon dropdown-arrow"><use xlink:href="/build/icons/sprite.svg#dropdown-arrow" /></svg></span>
+      <ul class="primary-subnav">
+        <li>
+          <a href="/training/for-individuals/certified-scrum-training-for-individuals" class="media">
+            <div class="media-item">
+              <svg width="33" height="33" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path stroke="#636363" d="M1 28h31V5H1z"/><path stroke="#A6A6A6" d="M5.043 11.765h9.435M5.043 17.177h9.435M5.043 19.883h9.435M5.043 22.589h5.392"/><path stroke="#52EAD6" class="icon-hl-2" d="M20.89 18.52l-1.306 3.603 1.56.025 1.211.988 1.186-3.27M24.028 19.88l1.18 3.256 1.211-.988 1.561-.025-1.233-3.403"/><path d="M27.957 15.824a4.05 4.05 0 01-4.044 4.059 4.05 4.05 0 01-4.043-4.06 4.05 4.05 0 014.043-4.058 4.05 4.05 0 014.044 4.059z" stroke="#00C3A9" class="icon-hl-1"/></g></svg>
+            </div>
+            <div class="media-body">
+              Certified Scrum Training
+              <em>2-day certification classes</em>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/training/for-individuals/live-online-training-for-individuals" class="media">
+            <div class="media-item">
+              <svg width="33" height="33" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M25.099 18.985c-2.883-1.12-6.083-2.509-6.353-3.377v-.91c.598-.614 1.07-1.472 1.348-2.477a1.475 1.475 0 00.284-2.135V8.051c0-2.101-1.164-3.54-3.825-3.54-2.59 0-3.824 1.439-3.824 3.54v2.035a1.477 1.477 0 00.283 2.135c.278 1.005.75 1.863 1.348 2.478v.909c-.267.866-3.467 2.257-6.35 3.377a.645.645 0 00-.41.606v1.256h17.908V19.59a.648.648 0 00-.41-.606z" stroke="#00C3A9" class="icon-hl-1"/><path d="M11.528 26.484l-.647 3.99c0 .29.29.526.647.526h9.941c.359 0 .648-.236.648-.526l-.65-3.99M29.808 2H3.188A2.176 2.176 0 001 4.196V22.68c0 1.224.964 2.205 2.189 2.205h26.619a2.184 2.184 0 002.191-2.205V4.196A2.177 2.177 0 0029.808 2z" stroke="#636363"/><path stroke="#A6A6A6" d="M2.002 20.847H31"/></g></svg>
+            </div>
+            <div class="media-body">
+              Live Online Training
+              <em>Live, instructor-led courses</em>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/training/for-individuals/in-person-public-training-for-individuals" class="media">
+            <div class="media-item">
+              <svg width="33" height="33" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path stroke="#00C3A9" class="icon-hl-1" d="M27.975 31.937V20.734M29.799 4.056c0 1.03-.816 2.465-1.824 2.465s-1.823-1.436-1.823-2.465c0-1.03.815-1.862 1.823-1.862s1.824.833 1.824 1.862zM25.615 31.937l-.722-13.246V13.81a2.7 2.7 0 00-1.574-2.457l-6.113-2.798v-.883h6.663c.927 0 1.64.45 2.211 1.14.864 1.049 2.818 1.18 3.367.093.155-.306 1.965.116 1.965.116s.85.127.507 9.496c-.01.254-.853-.094-.862.174l-.723 13.246"/><path stroke="#636363" d="M15.839 2.325V1M2.355 21.192V2.325M22.574 2.325H1M22.574 21.233H1"/><path d="M18.209 26.619c0 .898-.746 2.151-1.664 2.151-.919 0-1.663-1.253-1.663-2.151 0-.898.744-1.626 1.663-1.626.918 0 1.664.728 1.664 1.626zM21.01 32a1.35 1.35 0 00-1.335-1.542h-1.467c-1.127 1.13-2.354 1.13-3.483 0h-1.38c-.82 0-1.45.728-1.334 1.542M7.42 26.619c0 .898-.745 2.151-1.663 2.151-.919 0-1.664-1.253-1.664-2.151 0-.898.745-1.626 1.664-1.626.918 0 1.664.728 1.664 1.626zM10.222 32a1.35 1.35 0 00-1.335-1.542H7.42c-1.127 1.13-2.354 1.13-3.483 0h-1.38c-.819 0-1.45.728-1.334 1.542" stroke="#A6A6A6"/></g></svg>
+            </div>
+            <div class="media-body">
+              In-Person Public Training
+              <em>View classes and locations</em>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/training/for-individuals/on-demand-video-training-for-individuals" class="media">
+            <div class="media-item">
+              <svg width="33" height="33" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M20.383 15.833l-5.854-4.57a.86.86 0 00-1.389.678v9.143a.86.86 0 001.39.678l5.853-4.571a.86.86 0 000-1.358z" stroke="#00C3A9" class="icon-hl-1" class="icon-hl-1"/><path stroke="#636363" d="M1.012 32H32V1H1.012zM1 7.739h30.98M1 25.261h30.98"/><path stroke="#A6A6A6" d="M5.055 27.958v1.348M9.097 27.958v1.348M13.139 27.958v1.348M17.182 27.958v1.348M21.224 27.958v1.348M25.267 27.958v1.348M29.309 27.958v1.348M3.708 3.696v1.347M7.75 3.696v1.347M11.792 3.696v1.347M15.834 3.696v1.347M19.877 3.696v1.347M23.919 3.696v1.347M27.961 3.696v1.347"/></g></svg>
+            </div>
+            <div class="media-body">
+              On-Demand Video Training
+              <em>Instant, streaming access to courses</em>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item-secondary"><a href="/training/roles">Which Course is Right for Me?</a></li>
+        <li class="nav-item-secondary"><a href="/training/for-individuals/mentoring-and-coaching-for-individuals">Mentoring and Coaching</a></li>
+        <li class="nav-item-secondary"><a href="/training/seus-and-pdus">SEUs and PDUs</a></li>
+        <li class="nav-item-secondary"><a href="/training/compare">Compare Courses</a></li>
+      </ul>
+    </li>
+
+    <li class="nav-corporate">
+      <span>For Teams <svg class="icon dropdown-arrow"><use xlink:href="/build/icons/sprite.svg#dropdown-arrow" /></svg></span>
+      <ul class="primary-subnav">
+        <li>
+          <a href="/training/for-teams/moving-to-agile" class="media">
+            <div class="media-item">
+              <svg width="33" height="33" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="m13.478 12.022 3.244-3.343S20.265 3.003 22.391 0M21.042 17.205l.153-2.294S27.208 8.54 32 2.134M20.993 19.573s-1.84.132-2.877-.345M18.116 22.002c1.037.477 2.877.345 2.877.345L19.76 23.95M10.216 14.507s3.883 3.189 1.413 7.172" stroke="#A6A6A6"/><path d="M21.042 17.205v4.75c0 .504.231.983.63 1.298l3.29 2.973c.19.149.409.257.643.314l3.22.797a1.658 1.658 0 0 1 1.096 2.358 1.683 1.683 0 0 1-1.504.918h-9.7a1.4 1.4 0 0 1-.86-.291L6.571 21.644a1.377 1.377 0 0 1-.357-1.784l5.86-7.838h1.402s3.357 6.57 7.565 5.183Z" stroke="#636363"/><path d="m7.327 18.373 11.932 9.175c.245.19.548.29.86.29h4.302c.32 0 .632-.107.88-.306l1.019-.814" stroke="#636363"/><path stroke="#00C3A9" d="M12.624 30.613H4.208M5.611 27.839H1.403M8.472 27.839h-.056M1.496 30.613h-.093M5.611 25.065H0M1.403 22.291h1.402"/></g></svg>
+            </div>
+            <div class="media-body">
+              Moving to Agile
+              <em>Learn how to transition your team to agile</em>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/training/for-teams/excelling-with-agile" class="media">
+            <div class="media-item">
+              <svg width="33" height="33" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><g stroke-width="1.1"><path d="M11.436 12.519C10.603 13.56 9.043 15.82 9 18.22l2.927-1.317M21.502 12.443c.815 1.004 2.453 3.318 2.498 5.776l-2.929-1.316M16.487 1c-2.12 0-3.672 3.625-3.67 5.536l1.15 10.497a.376.376 0 0 0 .374.347h4.293c.196 0 .359-.151.373-.347l1.151-10.522c0-1.886-1.55-5.511-3.67-5.511Z" stroke="#636363"/><path d="M17.948 7.838c0 .798-.654 1.445-1.461 1.446a1.453 1.453 0 0 1-1.46-1.446c0-.8.654-1.446 1.462-1.445.805 0 1.459.646 1.459 1.445ZM17.562 19.331c-.3.91-.673 1.612-1.074 1.612-.404 0-.775-.703-1.077-1.612-.447.21-.736.6-.736 1.25 0 1.087.812 5.419 1.812 5.419s1.812-4.333 1.812-5.418c0-.651-.291-1.041-.737-1.25Z" stroke="#00C3A9"/></g><g stroke="#A6A6A6"><path d="M19.948 29.222c1.445-2.737 4.183-3.92 6.71-3.201 1.01-2.4 3.058-4.063 5.342-4.063M1 19c4.387 0 5.489 4.39 5.489 4.39 3.687 0 6.679 1.82 6.679 5.832M10.437 32c0-1.582-1.208-2.866-2.696-2.866-1.487 0-2.695 1.284-2.695 2.866"/><path d="M5.046 32c0-2.375-1.81-4.3-4.043-4.3M30.653 27.7c-2.232 0-4.043 1.925-4.043 4.3"/></g></g></svg>
+            </div>
+            <div class="media-body">
+              Excelling with Agile
+              <em>Plans to help your agile team thrive</em>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/training/for-teams/certifying-your-team" class="media">
+            <div class="media-item">
+              <svg width="33" height="33" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path stroke="#636363" d="M1 28h31V5H1z"/><path stroke="#A6A6A6" d="M5.043 11.765h9.435M5.043 17.177h9.435M5.043 19.883h9.435M5.043 22.589h5.392"/><path stroke="#52EAD6" class="icon-hl-2" d="M20.89 18.52l-1.306 3.603 1.56.025 1.211.988 1.186-3.27M24.028 19.88l1.18 3.256 1.211-.988 1.561-.025-1.233-3.403"/><path d="M27.957 15.824a4.05 4.05 0 01-4.044 4.059 4.05 4.05 0 01-4.043-4.06 4.05 4.05 0 014.043-4.058 4.05 4.05 0 014.044 4.059z" stroke="#00C3A9" class="icon-hl-1"/></g></svg>
+            </div>
+            <div class="media-body">
+              Certifying Your Team
+              <em>Live, online, in person or private classes</em>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/training/for-teams/coaching-and-mentoring" class="media">
+            <div class="media-item">
+              <svg width="33" height="33" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M24.024 9.096h5.643c.737 0 1.333-.605 1.333-1.35V2.35C31 1.605 30.404 1 29.667 1H4.333C3.6 1 3 1.605 3 2.35v5.396c0 .745.599 1.35 1.333 1.35H19v3.933l5.024-3.933Z" stroke="#00C3A9" stroke-linecap="round" stroke-linejoin="round"/><path d="M25.247 4.415c.515-.13.942-.151 1.282-.06l.078.028a.421.421 0 0 1 .215.23.505.505 0 0 1-.03.418l-.046.09.156-.052.629-.224a.318.318 0 0 1 .25.015.31.31 0 0 1 .166.178.31.31 0 0 1 0 .257.335.335 0 0 1-.196.18l-.504.175-.287.095-.245.073-.19.05-.157.034a.823.823 0 0 1-.179.012l-.066-.013a.37.37 0 0 1-.272-.235.455.455 0 0 1 .021-.337c.04-.093.096-.194.17-.306l.038-.062-.025-.001-.14.005a2.64 2.64 0 0 0-.505.089 5.823 5.823 0 0 0-.544.166c-.192.07-.397.15-.612.245l.046-.02a4.547 4.547 0 0 1-.25.209 2.429 2.429 0 0 1-.31.204c-.11.061-.223.104-.338.13a.791.791 0 0 1-.379-.01.396.396 0 0 1-.223-.2.46.46 0 0 1-.027-.085l-.005-.04-.14.109c-.442.328-.808.512-1.106.55l-.108.006a.723.723 0 0 1-.208-.03.367.367 0 0 1-.247-.208.54.54 0 0 1-.002-.4c.01-.03.021-.063.035-.097l.042-.105-.044.01-.033.004-.068-.004a.356.356 0 0 1-.216-.12.31.31 0 0 1-.067-.25c.013-.08.05-.15.127-.224l.238-.18c.048-.032.097-.06.147-.084.196-.1.384-.128.546-.08.113.022.2.094.252.204a.45.45 0 0 1 .002.356l-.031.08-.166.369.11-.058.09-.054.1-.064.23-.163.13-.098c.107-.087.208-.172.302-.255l.09-.08.224-.207.163-.16a.305.305 0 0 1 .33-.1c.052.013.102.04.142.08a.47.47 0 0 1 .076.099c.047.093.05.2.015.31l-.053.152-.084.21.084-.06.23-.194a.336.336 0 0 1 .138-.077c.215-.092.418-.174.61-.244.207-.076.408-.137.6-.181Zm-8.084-.218a.614.614 0 0 1 .344-.003l.09.033a.42.42 0 0 1 .207.236.471.471 0 0 1-.032.408l-.022.038.17-.066a.337.337 0 0 1 .255.018c.08.04.137.106.16.177a.302.302 0 0 1-.005.262.355.355 0 0 1-.185.176l-.092.032-.683.242-.15.042-.054.004a.278.278 0 0 1-.084-.01.378.378 0 0 1-.218-.13.508.508 0 0 1-.073-.12.45.45 0 0 1-.02-.238l.018-.07-.201.182a.323.323 0 0 1-.168.08l-.465.16-.287.095-.245.073-.19.05-.157.034a.823.823 0 0 1-.179.012l-.066-.013a.37.37 0 0 1-.272-.235.455.455 0 0 1 .021-.337c.04-.093.096-.194.17-.306l.038-.062-.025-.001-.14.005a2.64 2.64 0 0 0-.505.089 5.823 5.823 0 0 0-.544.166c-.192.07-.397.15-.612.245l.071-.03a.42.42 0 0 1-.072.04l-.092.033-.683.242-.15.042-.054.004a.278.278 0 0 1-.084-.01.378.378 0 0 1-.218-.13.508.508 0 0 1-.073-.12.45.45 0 0 1-.02-.238l.018-.07-.144.132a.366.366 0 0 1-.15.116l-.092.032-.683.242-.15.042-.054.004a.278.278 0 0 1-.084-.01.378.378 0 0 1-.218-.13.508.508 0 0 1-.073-.12.45.45 0 0 1-.02-.238l.018-.07-.201.182a.323.323 0 0 1-.168.08l-.465.16-.287.095-.245.073-.19.05-.157.034a.823.823 0 0 1-.179.012l-.066-.013a.37.37 0 0 1-.272-.235.455.455 0 0 1 .021-.337c.04-.093.096-.194.17-.306l.038-.062-.025-.001-.14.005a2.64 2.64 0 0 0-.505.089 5.823 5.823 0 0 0-.544.166c-.192.07-.397.15-.612.245a.31.31 0 0 1-.25.005.316.316 0 0 1-.172-.16.302.302 0 0 1-.012-.268.336.336 0 0 1 .174-.181c.23-.102.448-.19.653-.265.208-.076.409-.137.6-.181.515-.13.942-.151 1.282-.06l.078.028a.421.421 0 0 1 .215.23.505.505 0 0 1-.03.418l-.046.09.156-.052.61-.217.199-.18.144-.122c.1-.083.197-.154.293-.213.101-.063.204-.11.307-.14a.614.614 0 0 1 .344-.003l.09.033a.42.42 0 0 1 .207.236.471.471 0 0 1-.032.408l-.022.038.1-.04.219-.196.144-.123c.1-.083.197-.154.293-.213.101-.063.204-.11.307-.14a.614.614 0 0 1 .344-.003l.09.033a.42.42 0 0 1 .207.236.471.471 0 0 1-.032.408l-.022.038.17-.066a5.187 5.187 0 0 1 1.22-.428c.514-.13.94-.151 1.281-.06l.078.028a.421.421 0 0 1 .215.23.505.505 0 0 1-.03.418l-.046.09.156-.052.61-.217.199-.18.144-.122c.1-.083.197-.154.293-.213.101-.063.204-.11.307-.14Z" fill="#979797" fill-rule="nonzero"/><path d="M21.163 28.24c-2.985-1.194-6.301-2.677-6.58-3.602v-.968c.62-.656 1.108-1.571 1.398-2.641.696-.506.868-1.547.293-2.278v-2.17c0-2.24-1.205-3.775-3.961-3.775-2.683 0-3.962 1.534-3.962 3.775v2.17c-.573.731-.401 1.772.292 2.276.29 1.072.778 1.987 1.398 2.643v.968c-.278.924-3.592 2.407-6.578 3.602a.692.692 0 0 0-.424.645v2.424c0 .382.295.691.658.691h17.232c.362 0 .656-.309.656-.69v-2.425a.69.69 0 0 0-.422-.645Z" stroke="#636363" stroke-linecap="round" stroke-linejoin="round"/><path d="M23.967 32h5.501a.536.536 0 0 0 .532-.54v-1.895a.537.537 0 0 0-.343-.503c-2.419-.933-5.103-2.093-5.329-2.815v-.757c.503-.513.897-1.228 1.131-2.064.56-.391.706-1.204.238-1.78V19.95c0-1.751-.977-2.95-3.207-2.95-2.176 0-3.21 1.199-3.21 2.95v1.697a1.227 1.227 0 0 0 .236 1.779c.234.836.63 1.551 1.133 2.064" stroke="#979797" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+            </div>
+            <div class="media-body">
+              Coaching and Mentoring
+              <em>Tailored support for your specific goals</em>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/training/for-teams/on-demand-video-training-for-teams" class="media">
+            <div class="media-item">
+              <svg width="33" height="33" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M20.383 15.833l-5.854-4.57a.86.86 0 00-1.389.678v9.143a.86.86 0 001.39.678l5.853-4.571a.86.86 0 000-1.358z" stroke="#00C3A9" class="icon-hl-1" class="icon-hl-1"/><path stroke="#636363" d="M1.012 32H32V1H1.012zM1 7.739h30.98M1 25.261h30.98"/><path stroke="#A6A6A6" d="M5.055 27.958v1.348M9.097 27.958v1.348M13.139 27.958v1.348M17.182 27.958v1.348M21.224 27.958v1.348M25.267 27.958v1.348M29.309 27.958v1.348M3.708 3.696v1.347M7.75 3.696v1.347M11.792 3.696v1.347M15.834 3.696v1.347M19.877 3.696v1.347M23.919 3.696v1.347M27.961 3.696v1.347"/></g></svg>
+            </div>
+            <div class="media-body">
+              On-Demand Video Training
+              <em>Instant, streaming access to courses</em>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item-secondary"><a href="/training/for-teams/learning-paths">Learning Paths</a></li>
+        <li class="nav-item-secondary"><a href="/training/compare">Compare Courses</a></li>
+      </ul>
+    </li>
+
+    <li class="nav-agile">
+      <span>Agile Resources <svg class="icon dropdown-arrow"><use xlink:href="/build/icons/sprite.svg#dropdown-arrow" /></svg></span>
+      <ul class="primary-subnav">
+        <li><a href="/agile/new-to-agile-or-scrum">New to Agile and Scrum</a></li>
+        <li><a href="/agile/scrum">Scrum</a></li>
+        <li><a href="/agile/user-stories">User Stories</a></li>
+        <li><a href="/agile/planning-poker">Planning Poker</a></li>
+        <li><a href="/agile/transitioning-to-agile">Agile Software Development</a></li>
+        <li><a href="/agile/agile-project-management">Agile Project Management</a></li>
+        <li><a href="/blog/tag/presentations">Agile Presentations</a></li>
+        <li><a href="/agile/podcast">Agile Mentors Podcast</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <span>About Us <svg class="icon dropdown-arrow"><use xlink:href="/build/icons/sprite.svg#dropdown-arrow" /></svg></span>
+      <ul class="primary-subnav wide">
+        <li><a href="/company/about-mike-cohn">About Mountain Goat Software</a></li>
+        <li><a href="/meet-the-team">Meet the Team</a></li>
+        <li><a href="/company/general-inquiries">Contact Us</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="/blog">Our Blog</a>
+    </li>
+
+    <li>
+      <a href="/training/schedule" class="button button-small">Training Schedule</a>
+    </li>
+
+    <li>
+      <a href="#" data-toggle="search"><svg class="icon search"><use xlink:href="/build/icons/sprite.svg#search" /></svg></a>
+    </li>
+  </ul>
+</nav>
+
+<div class="hidden">
+  <nav id="mobile-nav">
+    <ul class="primary">
+      <li>
+        <span>Agile Resources</span>
+        <ul class="primary-subnav">
+          <li><a href="/agile/new-to-agile-or-scrum">New to Agile and Scrum</a></li>
+          <li><a href="/agile/scrum">Scrum</a></li>
+          <li><a href="/agile/user-stories">User Stories</a></li>
+          <li><a href="/agile/planning-poker">Planning Poker</a></li>
+          <li><a href="/agile/transitioning-to-agile">Agile Software Development</a></li>
+          <li><a href="/agile/agile-project-management">Agile Project Management</a></li>
+          <li><a href="/blog/tag/presentations">Agile Presentations</a></li>
+          <li><a href="/agile/podcast">Agile Mentors Podcast</a></li>
+        </ul>
+      </li>
+      <li>
+        <span>For Individuals</span>
+        <ul>
+          <li><a href="/training/for-individuals/certified-scrum-training-for-individuals" class="media"> Certified Scrum Training</a></li>
+          <li><a href="/training/for-individuals/live-online-training-for-individuals" class="media"> Live Online Training</a></li>
+          <li><a href="/training/for-individuals/in-person-public-training-for-individuals" class="media"> In-Person Public Training</a></li>
+          <li><a href="/training/for-individuals/on-demand-video-training-for-individuals" class="media"> On-Demand Video Training</a></li>
+          <li><a href="/training/roles">Which Course is Right for Me?</a></li>
+          <li><a href="/training/for-individuals/mentoring-and-coaching-for-individuals">Mentoring and Coaching</a></li>
+          <li><a href="/training/seus-and-pdus">SEUs and PDUs</a></li>
+          <li><a href="/training/compare">Compare Courses</a></li>
+        </ul>
+      </li>
+      <li>
+        <span>For Teams</span>
+        <ul class="primary-subnav">
+          <li><a href="/training/for-teams/moving-to-agile" class="media"> Moving to Agile</a></li>
+          <li><a href="/training/for-teams/excelling-with-agile" class="media"> Excelling with Agile</a></li>
+          <li><a href="/training/for-teams/certifying-your-team" class="media"> Certifying Your Team</a></li>
+          <li><a href="/training/for-teams/coaching-and-mentoring" class="media"> Coaching and Mentoring</a></li>
+          <li><a href="/training/for-teams/on-demand-video-training-for-teams" class="media"> On-Demand Video Training</a></li>
+          <li><a href="/training/for-teams/learning-paths">Learning Paths</a></li>
+          <li><a href="/training/compare">Compare Courses</a></li>
+        </ul>
+      </li>
+      <li>
+        <span>About Us</span>
+        <ul>
+          <li><a href="/company/about-mike-cohn">About Mountain Goat Software</a></li>
+          <li><a href="/meet-the-team">Meet the Team</a></li>
+          <li><a href="/company/general-inquiries">Contact Us</a></li>
+        </ul>
+      </li>
+      <li><a href="/email-tips">Get Weekly Email Tips</a></li>
+    </ul>
+  </nav>
+</div>
+
+<nav class="mobile-navbar">
+  <ul>
+    <li><a href="/training">Our Courses</a></li>
+    <li><a href="/training/schedule">Training Schedule</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="#" data-toggle="search"><svg class="icon search"><use xlink:href="/build/icons/sprite.svg?cb=1127093440#search" /></svg></a></li>
+    <li><a href="#mobile-nav"><svg class="icon"><use xlink:href="/build/icons/sprite.svg?cb=1127093440#mobile-nav-alt" /></svg></a></li>
+  </ul>
+</nav>
+
+    </header>
+
+    <div id="search" class="search ">
+  <div class="container text-center">
+
+    <h3>Search the site:</h3>
+
+    <div class="content-narrow">
+      <form method="post" action="https://www.mountaingoatsoftware.com/"  >
+<div class='hiddenFields'>
+<input type="hidden" name="params" value="eyJyZXN1bHRfcGFnZSI6InNlYXJjaCJ9" />
+<input type="hidden" name="ACT" value="37" />
+<input type="hidden" name="site_id" value="1" />
+<input type="hidden" name="csrf_token" value="c3f951b1890f81b99d9fca6c0d68128676baa725" />
+</div>
+
+
+        
+        <input id="keywords" name="keywords" placeholder="e.g. user stories" title="Search" type="search"  />
+        <button>
+          <svg width="35%" height="35%" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M10 0C6.685 0 4 2.685 4 6c0 1.185.333 2.278.926 3.204L.389 13.722a1.341 1.341 0 0 0 0 1.89c.259.258.592.388.944.388.333 0 .685-.13.944-.389l4.519-4.537A5.899 5.899 0 0 0 10 12c3.314 0 6-2.685 6-6s-2.686-6-6-6zm0 10c-2.204 0-4-1.796-4-4 0-2.204 1.796-4 4-4 2.203 0 4 1.796 4 4 0 2.204-1.797 4-4 4z" fill-rule="evenodd"/></svg>
+        </button>
+        <p class="search-browse text-right">
+          <a href="#" data-toggle="tags" class="text-small text-quiet">Browse topics</a>
+        </p>
+      </form>
+      
+      <h3>Browse these topics:</h3>
+      <div class="cluster cluster-centered">
+        <div class="cluster-inner">
+          
+            <a href="/blog/tag/estimating" class="button button-tags">estimating</a>
+          
+            <a href="/blog/tag/product-backlog" class="button button-tags">product backlog</a>
+          
+            <a href="/blog/tag/product-owner" class="button button-tags">product owner</a>
+          
+            <a href="/blog/tag/sprints" class="button button-tags">sprints</a>
+          
+            <a href="/blog/tag/user-stories" class="button button-tags">user stories</a>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <div role="main" class="">
+
+      
+        <nav class="breadcrumbs breadcrumbs-pullup breadcrumbs-light breadcrumbs-fade  ">
+          
+          <ol>
+            <li>
+              <a href="/" class="breadcrumb-home">
+                <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M11.986 6.097c.028-.097.014-.194-.055-.278L6.18.07c-.097-.098-.263-.098-.36 0L.07 5.82c-.07.083-.084.18-.056.277.04.097.14.153.236.153H1.5v5.5c0 .14.11.25.25.25h2.5c.14 0 .25-.11.25-.25V7.5h3v4.25c0 .14.11.25.25.25h2.5c.14 0 .25-.11.25-.25v-5.5h1.25c.097 0 .194-.056.236-.153z" fill-rule="evenodd"/></svg>
+              </a>
+            </li>
+            
+              
+                <li><a href="/blog">blog</a></li>
+              
+            
+          </ol>
+
+          
+            <script type="application/ld+json">
+              {
+                "@context": "http://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": "https://www.mountaingoatsoftware.com/",
+                    "name": "Home"
+                  }
+                  
+                    ,{
+                      "@type": "ListItem",
+                      "position": 2,
+                      "item": "https://www.mountaingoatsoftware.com//blog",
+                      "name": "blog"
+                    }
+                  
+                ]
+              }
+            </script>
+          
+        </nav>
+      
+
+      
+    <div class="banner banner-blog stripe-blue">
+
+      <div class="container">
+        <div class="content-centered">
+          <h1>The Mountain Goat Software Blog</h1>
+          <p class="text-large text-center">
+            Practical and actionable advice, tips and guidance for creating high-performing teams.<br />
+            New to the blog? <a href="/blog/topics">Get started here</a>.
+          </p>
+        
+          <div class="stack">
+            <div class="cluster cluster-centered">
+              <div class="cluster-inner">
+                
+                  <a href="/blog/tag/estimating" class="button button-tags-invert">estimating</a>
+                
+                  <a href="/blog/tag/product-backlog" class="button button-tags-invert">product backlog</a>
+                
+                  <a href="/blog/tag/product-owner" class="button button-tags-invert">product owner</a>
+                
+                  <a href="/blog/tag/sprints" class="button button-tags-invert">sprints</a>
+                
+                  <a href="/blog/tag/user-stories" class="button button-tags-invert">user stories</a>
+                
+              </div>
+            </div>
+            <button id="filter-tags-trigger" class="filter-tags-trigger" data-filter="filter-tags-dropdown">Show all tags</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="filter-tags-dropdown" class="filter-tags-dropdown">
+        <div class="filters filter-tags">
+          <form action="#" method="get" class="filters filter-tags-form">
+  <label for="filter-tags" class="chosen-label">
+    Show Posts tagged
+  </label>
+
+  <select id="filter-tags" name="filter-tags" class="chosen-select" data-placeholder="All tags" multiple style="width: 275px;">
+    
+      <option value="abundance" >abundance</option> 
+    
+      <option value="acceptance-criteria" >acceptance criteria</option> 
+    
+      <option value="accountability" >accountability</option> 
+    
+      <option value="action" >action</option> 
+    
+      <option value="adapting" >adapting</option> 
+    
+      <option value="agile" >agile</option> 
+    
+      <option value="agile-books" >agile books</option> 
+    
+      <option value="agile-coach" >agile coach</option> 
+    
+      <option value="agile-game-development" >agile game development</option> 
+    
+      <option value="agile-manifesto" >agile manifesto</option> 
+    
+      <option value="agile-organization" >agile organization</option> 
+    
+      <option value="agile-planning" >agile planning</option> 
+    
+      <option value="agile-pmo" >agile pmo</option> 
+    
+      <option value="agile-practices" >agile practices</option> 
+    
+      <option value="agile-problems" >agile problems</option> 
+    
+      <option value="agile-processes" >agile processes</option> 
+    
+      <option value="agile-product-management" >agile product management</option> 
+    
+      <option value="agile-project-management" >agile project management</option> 
+    
+      <option value="agile-projects" >agile projects</option> 
+    
+      <option value="agile-requirements" >agile requirements</option> 
+    
+      <option value="agile-software-development" >agile software development</option> 
+    
+      <option value="agile-trainer" >agile trainer</option> 
+    
+      <option value="agility" >agility</option> 
+    
+      <option value="allocation" >allocation</option> 
+    
+      <option value="analysis-project" >analysis project</option> 
+    
+      <option value="announcement" >announcement</option> 
+    
+      <option value="announcements" >announcements</option> 
+    
+      <option value="april-fools-day" >april fools day</option> 
+    
+      <option value="architecture" >architecture</option> 
+    
+      <option value="articles" >articles</option> 
+    
+      <option value="artifacts" >artifacts</option> 
+    
+      <option value="assigning-work" >assigning work</option> 
+    
+      <option value="audio" >audio</option> 
+    
+      <option value="authority" >authority</option> 
+    
+      <option value="backlog" >backlog</option> 
+    
+      <option value="benefits" >benefits</option> 
+    
+      <option value="better-user-stories" >better user stories</option> 
+    
+      <option value="book-reviews" >book reviews</option> 
+    
+      <option value="books" >books</option> 
+    
+      <option value="budget" >budget</option> 
+    
+      <option value="burndown-chart" >burndown chart</option> 
+    
+      <option value="capacity-driven" >capacity driven</option> 
+    
+      <option value="career" >career</option> 
+    
+      <option value="career-advice" >career advice</option> 
+    
+      <option value="ceremonies" >ceremonies</option> 
+    
+      <option value="certification" >certification</option> 
+    
+      <option value="change" >change</option> 
+    
+      <option value="characteristics" >characteristics</option> 
+    
+      <option value="chief-product-owner" >chief product owner</option> 
+    
+      <option value="coaching" >coaching</option> 
+    
+      <option value="collaboration" >collaboration</option> 
+    
+      <option value="commitment" >commitment</option> 
+    
+      <option value="commitment-driven" >commitment driven</option> 
+    
+      <option value="committed" >committed</option> 
+    
+      <option value="communication" >communication</option> 
+    
+      <option value="complexity" >complexity</option> 
+    
+      <option value="consensus" >consensus</option> 
+    
+      <option value="consistent-sprint-length" >consistent sprint length</option> 
+    
+      <option value="consulting" >consulting</option> 
+    
+      <option value="continuous-improvement" >continuous improvement</option> 
+    
+      <option value="continuous-integration" >continuous integration</option> 
+    
+      <option value="core-principles" >core principles</option> 
+    
+      <option value="cost" >cost</option> 
+    
+      <option value="courses" >courses</option> 
+    
+      <option value="cross-functional" >cross functional</option> 
+    
+      <option value="csm" >csm</option> 
+    
+      <option value="cspo" >cspo</option> 
+    
+      <option value="customers" >customers</option> 
+    
+      <option value="daily-scrum" >daily scrum</option> 
+    
+      <option value="decision-making" >decision-making</option> 
+    
+      <option value="dedicated" >dedicated</option> 
+    
+      <option value="defect-management" >defect management</option> 
+    
+      <option value="definition-of-done" >definition of done</option> 
+    
+      <option value="definition-of-ready" >definition of ready</option> 
+    
+      <option value="demonstration" >demonstration</option> 
+    
+      <option value="dependencies" >dependencies</option> 
+    
+      <option value="design" >design</option> 
+    
+      <option value="developers" >developers</option> 
+    
+      <option value="development" >development</option> 
+    
+      <option value="discussion" >discussion</option> 
+    
+      <option value="distributed-scrum-teams" >distributed scrum teams</option> 
+    
+      <option value="distributed-teams" >distributed teams</option> 
+    
+      <option value="documentation" >documentation</option> 
+    
+      <option value="dod" >dod</option> 
+    
+      <option value="done" >done</option> 
+    
+      <option value="effort" >effort</option> 
+    
+      <option value="emergent" >emergent</option> 
+    
+      <option value="empirical-process" >empirical process</option> 
+    
+      <option value="epic" >epic</option> 
+    
+      <option value="estimate-inflation" >estimate inflation</option> 
+    
+      <option value="estimates" >estimates</option> 
+    
+      <option value="estimating" >estimating</option> 
+    
+      <option value="events" >events</option> 
+    
+      <option value="expectation-management" >expectation management</option> 
+    
+      <option value="experimenting" >experimenting</option> 
+    
+      <option value="facilitation" >facilitation</option> 
+    
+      <option value="fast-feedback" >fast feedback</option> 
+    
+      <option value="feature-driven-development" >feature driven development</option> 
+    
+      <option value="feature-teams" >feature teams</option> 
+    
+      <option value="features" >features</option> 
+    
+      <option value="feedback" >feedback</option> 
+    
+      <option value="fibonacci" >fibonacci</option> 
+    
+      <option value="finishing-work" >finishing work</option> 
+    
+      <option value="fix-date" >fix-date</option> 
+    
+      <option value="fix-scope" >fix-scope</option> 
+    
+      <option value="fixed-everything" >fixed-everything</option> 
+    
+      <option value="fixed-price" >fixed-price</option> 
+    
+      <option value="fixed-price-planning" >fixed-price planning</option> 
+    
+      <option value="flow" >flow</option> 
+    
+      <option value="focus" >focus</option> 
+    
+      <option value="framework" >framework</option> 
+    
+      <option value="full-time" >full time</option> 
+    
+      <option value="gaming" >gaming</option> 
+    
+      <option value="general-business" >general business</option> 
+    
+      <option value="governance" >governance</option> 
+    
+      <option value="grooming" >grooming</option> 
+    
+      <option value="guest-post" >guest post</option> 
+    
+      <option value="hardware" >hardware</option> 
+    
+      <option value="hierarchy" >hierarchy</option> 
+    
+      <option value="holacracy" >holacracy</option> 
+    
+      <option value="hours" >hours</option> 
+    
+      <option value="humble" >humble</option> 
+    
+      <option value="humor" >humor</option> 
+    
+      <option value="impediments" >impediments</option> 
+    
+      <option value="incentives" >incentives</option> 
+    
+      <option value="incremental" >incremental</option> 
+    
+      <option value="influence" >influence</option> 
+    
+      <option value="influential" >influential</option> 
+    
+      <option value="inspect-and-adapt" >inspect and adapt</option> 
+    
+      <option value="intentional" >intentional</option> 
+    
+      <option value="interruptions" >interruptions</option> 
+    
+      <option value="interviewing" >interviewing</option> 
+    
+      <option value="introverts" >introverts</option> 
+    
+      <option value="iterating" >iterating</option> 
+    
+      <option value="iterations" >iterations</option> 
+    
+      <option value="iterative" >iterative</option> 
+    
+      <option value="job-interview" >job interview</option> 
+    
+      <option value="job-roles" >job roles</option> 
+    
+      <option value="job-stories" >job stories</option> 
+    
+      <option value="job-titles" >job titles</option> 
+    
+      <option value="kanban" >kanban</option> 
+    
+      <option value="keynote" >keynote</option> 
+    
+      <option value="knowledgeable" >knowledgeable</option> 
+    
+      <option value="large-stories" >large stories</option> 
+    
+      <option value="large-teams" >large teams</option> 
+    
+      <option value="leadership" >leadership</option> 
+    
+      <option value="lean" >lean</option> 
+    
+      <option value="learning" >learning</option> 
+    
+      <option value="less" >less</option> 
+    
+      <option value="management" >management</option> 
+    
+      <option value="manager" >manager</option> 
+    
+      <option value="managment" >managment</option> 
+    
+      <option value="measure" >measure</option> 
+    
+      <option value="meetings" >meetings</option> 
+    
+      <option value="mentor" >mentor</option> 
+    
+      <option value="methodologies" >methodologies</option> 
+    
+      <option value="metrics" >metrics</option> 
+    
+      <option value="micromanagement" >micromanagement</option> 
+    
+      <option value="micromanager" >micromanager</option> 
+    
+      <option value="mike-cohn" >mike cohn</option> 
+    
+      <option value="multitasking" >multitasking</option> 
+    
+      <option value="musing" >musing</option> 
+    
+      <option value="myths" >myths</option> 
+    
+      <option value="news" >news</option> 
+    
+      <option value="optimize" >optimize</option> 
+    
+      <option value="order" >order</option> 
+    
+      <option value="overlap-work" >overlap work</option> 
+    
+      <option value="partnership" >partnership</option> 
+    
+      <option value="personal" >personal</option> 
+    
+      <option value="personalities" >personalities</option> 
+    
+      <option value="phases" >phases</option> 
+    
+      <option value="planning" >planning</option> 
+    
+      <option value="planning-meeting" >planning meeting</option> 
+    
+      <option value="planning-poker" >planning poker</option> 
+    
+      <option value="popular" >popular</option> 
+    
+      <option value="presentations" >presentations</option> 
+    
+      <option value="prioritizing" >prioritizing</option> 
+    
+      <option value="problems" >problems</option> 
+    
+      <option value="process" >process</option> 
+    
+      <option value="product" >product</option> 
+    
+      <option value="product-backlog" >product backlog</option> 
+    
+      <option value="product-management" >product management</option> 
+    
+      <option value="product-owner" >product owner</option> 
+    
+      <option value="productivity" >productivity</option> 
+    
+      <option value="products" >products</option> 
+    
+      <option value="programmer" >programmer</option> 
+    
+      <option value="programming" >programming</option> 
+    
+      <option value="project-management" >project management</option> 
+    
+      <option value="projects" >projects</option> 
+    
+      <option value="quality" >quality</option> 
+    
+      <option value="refactoring" >refactoring</option> 
+    
+      <option value="refinement" >refinement</option> 
+    
+      <option value="relative-estimating" >relative estimating</option> 
+    
+      <option value="release-planning" >release planning</option> 
+    
+      <option value="remote-teams" >remote teams</option> 
+    
+      <option value="remote-working" >remote working</option> 
+    
+      <option value="reporting" >reporting</option> 
+    
+      <option value="requirements" >requirements</option> 
+    
+      <option value="research" >research</option> 
+    
+      <option value="resistance" >resistance</option> 
+    
+      <option value="responsible" >responsible</option> 
+    
+      <option value="results" >results</option> 
+    
+      <option value="retrospectives" >retrospectives</option> 
+    
+      <option value="rewards" >rewards</option> 
+    
+      <option value="risk" >risk</option> 
+    
+      <option value="roles" >roles</option> 
+    
+      <option value="safe" >safe</option> 
+    
+      <option value="scaled-agile" >scaled agile</option> 
+    
+      <option value="scaling" >scaling</option> 
+    
+      <option value="schedule" >schedule</option> 
+    
+      <option value="scrum" >scrum</option> 
+    
+      <option value="scrum-alliance" >scrum alliance</option> 
+    
+      <option value="scrum-at-home" >scrum at home</option> 
+    
+      <option value="scrum-foundations" >scrum foundations</option> 
+    
+      <option value="scrum-master" >scrum master</option> 
+    
+      <option value="scrum-product-owner" >scrum product owner</option> 
+    
+      <option value="scrum-project" >scrum project</option> 
+    
+      <option value="scrum-remote-teams" >scrum remote teams</option> 
+    
+      <option value="scrum-retrospectives" >scrum retrospectives</option> 
+    
+      <option value="scrum-roles" >scrum roles</option> 
+    
+      <option value="scrum-team" >scrum team</option> 
+    
+      <option value="self-organizing-teams" >self organizing teams</option> 
+    
+      <option value="self-organizer" >self-organizer</option> 
+    
+      <option value="self-organizing" >self-organizing</option> 
+    
+      <option value="self-sufficient" >self-sufficient</option> 
+    
+      <option value="service" >service</option> 
+    
+      <option value="skills" >skills</option> 
+    
+      <option value="skillset" >skillset</option> 
+    
+      <option value="software" >software</option> 
+    
+      <option value="specialist" >specialist</option> 
+    
+      <option value="spikes" >spikes</option> 
+    
+      <option value="splitting-stories" >splitting stories</option> 
+    
+      <option value="sprint-backlog" >sprint backlog</option> 
+    
+      <option value="sprint-burndown-chart" >sprint burndown chart</option> 
+    
+      <option value="sprint-demo" >sprint demo</option> 
+    
+      <option value="sprint-goals" >sprint goals</option> 
+    
+      <option value="sprint-length" >sprint length</option> 
+    
+      <option value="sprint-planning" >sprint planning</option> 
+    
+      <option value="sprint-retrospectives" >sprint retrospectives</option> 
+    
+      <option value="sprint-review" >sprint review</option> 
+    
+      <option value="sprinting" >sprinting</option> 
+    
+      <option value="sprints" >sprints</option> 
+    
+      <option value="stakeholders" >stakeholders</option> 
+    
+      <option value="standards" >standards</option> 
+    
+      <option value="story-detail" >story detail</option> 
+    
+      <option value="story-points" >story points</option> 
+    
+      <option value="story-size" >story size</option> 
+    
+      <option value="story-splitting" >story splitting</option> 
+    
+      <option value="story-writing" >story writing</option> 
+    
+      <option value="strategy" >strategy</option> 
+    
+      <option value="stretch-goal" >stretch goal</option> 
+    
+      <option value="suggestions" >suggestions</option> 
+    
+      <option value="summary" >summary</option> 
+    
+      <option value="sustainable-pace" >sustainable pace</option> 
+    
+      <option value="taskboard" >taskboard</option> 
+    
+      <option value="tasks" >tasks</option> 
+    
+      <option value="team-organization" >team organization</option> 
+    
+      <option value="team-structure" >team structure</option> 
+    
+      <option value="teams" >teams</option> 
+    
+      <option value="teamwork" >teamwork</option> 
+    
+      <option value="technical-debt" >technical debt</option> 
+    
+      <option value="tester" >tester</option> 
+    
+      <option value="testing" >testing</option> 
+    
+      <option value="theme" >theme</option> 
+    
+      <option value="time" >time</option> 
+    
+      <option value="time-box" >time box</option> 
+    
+      <option value="time-management" >time management</option> 
+    
+      <option value="topics" >topics</option> 
+    
+      <option value="tracking-progress" >tracking progress</option> 
+    
+      <option value="training" >training</option> 
+    
+      <option value="transitioning-to-agile" >transitioning to agile</option> 
+    
+      <option value="transparency" >transparency</option> 
+    
+      <option value="trust" >trust</option> 
+    
+      <option value="ui-design" >ui design</option> 
+    
+      <option value="uncertainty" >uncertainty</option> 
+    
+      <option value="unfinished-work" >unfinished work</option> 
+    
+      <option value="upfront-thinking" >upfront thinking</option> 
+    
+      <option value="usage" >usage</option> 
+    
+      <option value="use-cases" >use cases</option> 
+    
+      <option value="user-experience" >user experience</option> 
+    
+      <option value="user-roles" >user roles</option> 
+    
+      <option value="user-stories" >user stories</option> 
+    
+      <option value="user-story-detail" >user story detail</option> 
+    
+      <option value="users" >users</option> 
+    
+      <option value="vacation" >vacation</option> 
+    
+      <option value="value" >value</option> 
+    
+      <option value="vanity" >vanity</option> 
+    
+      <option value="velocity" >velocity</option> 
+    
+      <option value="video-recorded" >video recorded</option> 
+    
+      <option value="video-training" >video training</option> 
+    
+      <option value="virtual-teams" >virtual teams</option> 
+    
+      <option value="waterfall" >waterfall</option> 
+    
+      <option value="wedding" >wedding</option> 
+    
+      <option value="wireframe" >wireframe</option> 
+    
+      <option value="work" >work</option> 
+    
+      <option value="working-software" >working software</option> 
+    
+      <option value="writing-user-stories" >writing user stories</option> 
+    
+      <option value="zero-points" >zero points</option> 
+    
+  </select>
+
+  <label for="orderby" class="chosen-label">sorted by</label>
+  <select name="orderby" id="filter-sort" class="custom-selectbox">
+    <option value="date" >Most Recent</option>
+    <option value="comment_total" >Most Comments</option>
+  </select>
+
+  <input type="submit" value="Go" class="button filters-submit">
+</form>
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    
+      
+        <div class="stripe stripe-x-thin stripe-blue-light">
+          <div class="container">
+            <div class="content-narrow media">
+              <img src="/uploads/blog/announcement-video.svg" alt="Live Online Certified Scrum Training Courses Now Available" class="media-item">
+              <div class="media-body">
+                <h4 class="no-margin">Live Online Certified Scrum Training Courses Now Available</h4>
+                <p class="no-margin">
+                  No travel required. Train online at home and become a Certified ScrumMaster® or Certified Scrum Product Owner®.
+                  
+                    <a href="/training#virtual">View here</a>
+                  
+                </p>
+                
+  <div id="modal-single-scrum-foundations" class="hidden">
+
+    <div class="lead-magnet-modal">
+      <div class="lmm-image" style="background-color: #65bef6">
+        <img src="/uploads/lead-magnets/promo-scrum-foundations.png" alt="Scrum Foundations Video Series Image">
+      </div>
+      
+      <div class="lmm-content">
+        <h2 class="no-leader text-center">Scrum Foundations Video Series</h2>
+
+        <form
+  action="https://www.getdrip.com/forms/286234820/submissions"
+  data-drip-embedded-form="286234820"
+  class="drip-signup-form email-signup-form email-signup-form-scrum-foundations stacked"
+  method="post"
+  
+    data-tracker="single"
+  
+  >
+  <div style="display: none;" aria-hidden="true">
+    <label for="website">Website</label><br />
+    <input type="text" id="website" name="website" tabindex="-1" autocomplete="false" value="" />
+  </div>
+
+  
+  
+
+  
+  
+    <input type="hidden" name="fields[source_is_eu]" value="false">
+    <input type="hidden" name="fields[wants_weekly_tips]" value="true">
+
+    
+    
+      <input type="hidden" name="fields[wants_blog_posts]" value="true">
+      <input type="hidden" name="fields[wants_upcoming_courses]" value="true">
+      <input type="hidden" name="fields[wants_special_offers]" value="true">
+      <input type="hidden" name="fields[wants_better_user_stories]" value="true">
+      <input type="hidden" name="fields[wants_amc_updates]" value="true">
+      <input type="hidden" name="fields[wants_online_csx]" value="true">
+    
+  
+
+
+  <input type="hidden" name="fields[signup_source]" value="https://www.mountaingoatsoftware.com/blog">
+  <input type="hidden" name="fields[last_lead_magnet_requested_url_title]" value="scrum-foundations">
+  <input type="hidden" name="tags[]" value="Requested the Scrum Foundations lead magnet">
+  <input type="hidden" name="fields[title]" value="Scrum Foundations">
+
+  
+    <div class="signup-body has-trailer"><p>Enter your email address below to get this 19 part video series which explains the fundamentals of Scrum. </p></div>
+  
+
+  <p class="signup-first-name">
+    <label for="first_name">First Name</label>
+    <input type="text" name="fields[first_name]">
+  </p>
+  <p class="signup-email">
+    <label for="email">Email Address</label>
+    <input type="email" name="fields[email]" type="email" value="" required>
+  </p>
+
+  
+
+  <p class="signup-submit text-center has-leader">
+    <input type="submit" class="button " value="Watch Now">
+  </p>
+
+  
+    <p class="signup-privacy text-center no-trailer" style="font-size: .75rem; line-height: 1.4">
+      
+        We hate spam and promise to keep your email address safe. Unsubscribe at any time. <a href="/privacy-statement">Privacy Policy</a>
+      
+    </p>
+  
+</form>
+      </div>
+    </div>
+
+  </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+
+  
+
+      
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+
+    
+
+    
+      <div class="stripe stripe-blue-x-light stripe-bordered">
+        <div class="container">
+          <article class="panel content-article-panel content-article-panel-featured">
+            <div class="panel-header no-padding">
+              <a href="/blog/7-ways-to-get-and-improve-fast-feedback" class="panel-photo-header block-link">
+                
+                  <img src="/uploads/blog/2022-07-26-7-ways-to-get-more-rapid-feedback-quote.png" alt="" />
+                
+              </a>
+            </div>
+            <div class="panel-body">
+              <h3> <a href="/blog/7-ways-to-get-and-improve-fast-feedback" class="unstyled-link-with-hover">7 Ways to Get and Improve Fast Feedback</a></h3>
+              <div class="article-summary">
+                <p>Here&rsquo;s how to get the rapid feedback you need to ensure you build the right product.</p>
+              </div>
+              <div class="article-teaser"><p>Here&rsquo;s how to get the rapid feedback you need to ensure you build the right product.</p></div>
+              <div class="panel-footer">
+                <div class="post-metadata">
+                  <time class="post-date" datetime="Jul 26, 2022">Jul 26, 2022</time>
+                  
+                </div>
+                <div class="read-more">
+                  <a href="/blog/7-ways-to-get-and-improve-fast-feedback" class="button-small button-teal">Read</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <section class="stripe no-padding-trailer">
+        <div class="container grid-3up">
+    
+
+    
+
+    
+
+  
+
+
+    
+
+    
+
+      
+      
+
+      <div class="grid-item">
+        
+
+<article class="panel content-article-panel ">
+
+  <div class="panel-header no-padding">
+
+    <a href="/blog/for-better-agile-planning-be-collaborative"
+       class="block-link panel-photo-header panel-asset-header panel-blog-header ">
+      
+      <img src="/images/made/uploads/blog/2022-07-12-collaborative-planning-leads-to-better-plans_600_314.png" alt="For Better Agile Planning, Be Collaborative" width="600" height="314" />
+    </a>
+  </div>
+
+  <div class="panel-body">
+    <h3><a href="/blog/for-better-agile-planning-be-collaborative" class="unstyled-link-with-hover">For Better Agile Planning, Be Collaborative</a></h3>
+    
+    <div class="post-teaser">
+      <p>The best plans are created by developers and stakeholders working together.</p>
+    </div>
+
+    <div class="panel-footer">
+      <div class="post-metadata">
+        
+          <time class="post-date" datetime="Jul 12, 2022">Jul 12, 2022</time>
+          
+        
+      </div>
+      <div class="read-more">
+        <a href="/blog/for-better-agile-planning-be-collaborative" class="button-small button-ghost">Read</a>
+      </div>
+    </div>
+
+  </div>
+</article>
+      </div>
+
+    
+
+    
+
+    
+
+  
+
+
+    
+
+    
+
+      
+      
+
+      <div class="grid-item">
+        
+
+<article class="panel content-article-panel ">
+
+  <div class="panel-header no-padding">
+
+    <a href="/blog/clarifying-the-relationship-between-definition-of-done-and-conditions-of-sa"
+       class="block-link panel-photo-header panel-asset-header panel-blog-header ">
+      
+      <img src="/images/made/uploads/blog/2022-06-28-clarifying-definition-of-done_600_314.png" alt="Clarifying the Relationship between Definition of Done and Conditions of Satisfaction" width="600" height="314" />
+    </a>
+  </div>
+
+  <div class="panel-body">
+    <h3><a href="/blog/clarifying-the-relationship-between-definition-of-done-and-conditions-of-sa" class="unstyled-link-with-hover">Clarifying the Relationship between Definition of Done and Conditions of Satisfaction</a></h3>
+    
+    <div class="post-teaser">
+      <p>I&#39;d like to clarify the relationship between two important concepts: a team&#39;s Definition of Done &hellip;</p>
+    </div>
+
+    <div class="panel-footer">
+      <div class="post-metadata">
+        
+          <time class="post-date" datetime="Jun 28, 2022">Jun 28, 2022</time>
+          
+            <span class="dot"></span>
+            <a href="/blog/clarifying-the-relationship-between-definition-of-done-and-conditions-of-sa#comments" class="disqus-comment-count" data-disqus-identifier="{entry_id}">38 Comments</a>
+          
+        
+      </div>
+      <div class="read-more">
+        <a href="/blog/clarifying-the-relationship-between-definition-of-done-and-conditions-of-sa" class="button-small button-ghost">Read</a>
+      </div>
+    </div>
+
+  </div>
+</article>
+      </div>
+
+    
+
+    
+
+    
+
+  
+
+
+    
+
+    
+
+      
+      
+        <div class="grid-item">
+          <article class="panel email-panel">
+            <div>
+              <svg class="icon icon-large icon-white"><use xlink:href="/build/icons/sprite.svg#mgs-newspaper" /></svg>
+              <h3>Email Tips from Mike Cohn</h3>
+              <p class="small">a.k.a. join more than <span data-replace="weekly_tips_count">55,000</span> of our closest friends.</p>
+              <p><a href="/email-tips" class="button button-wide button-invert">Get Weekly Email Tips</a></p>
+            </div>
+          </article>
+        </div>
+      
+
+      <div class="grid-item">
+        
+
+<article class="panel content-article-panel ">
+
+  <div class="panel-header no-padding">
+
+    <a href="/blog/3-ways-to-help-agile-teams-plan-despite-uncertainty"
+       class="block-link panel-photo-header panel-asset-header panel-blog-header ">
+      
+      <img src="/images/made/uploads/blog/2022-06-21-living-with-uncertainty_600_314.png" alt="3 Ways to Help Agile Teams Plan Despite Uncertainty" width="600" height="314" />
+    </a>
+  </div>
+
+  <div class="panel-body">
+    <h3><a href="/blog/3-ways-to-help-agile-teams-plan-despite-uncertainty" class="unstyled-link-with-hover">3 Ways to Help Agile Teams Plan Despite Uncertainty</a></h3>
+    
+    <div class="post-teaser">
+      <p>We might not like ambiguity, but it&rsquo;s a fact of life. Find out how to plan with uncertainty in mind.</p>
+    </div>
+
+    <div class="panel-footer">
+      <div class="post-metadata">
+        
+          <time class="post-date" datetime="Jun 21, 2022">Jun 21, 2022</time>
+          
+        
+      </div>
+      <div class="read-more">
+        <a href="/blog/3-ways-to-help-agile-teams-plan-despite-uncertainty" class="button-small button-ghost">Read</a>
+      </div>
+    </div>
+
+  </div>
+</article>
+      </div>
+
+    
+
+    
+
+    
+
+  
+
+
+    
+
+    
+
+      
+      
+
+      <div class="grid-item">
+        
+
+<article class="panel content-article-panel ">
+
+  <div class="panel-header no-padding">
+
+    <a href="/blog/scrum-remote-teams-success-five-ways-to-have-all-three"
+       class="block-link panel-photo-header panel-asset-header panel-blog-header ">
+      
+      <img src="/images/made/uploads/blog/2022-06-07-scrum-remote-teams-success_600_314.png" alt="Scrum, Remote Teams, &amp; Success: Five Ways to Have All Three" width="600" height="314" />
+    </a>
+  </div>
+
+  <div class="panel-body">
+    <h3><a href="/blog/scrum-remote-teams-success-five-ways-to-have-all-three" class="unstyled-link-with-hover">Scrum, Remote Teams, &amp; Success: Five Ways to Have All Three</a></h3>
+    
+    <div class="post-teaser">
+      <p>In a remote-first world, how does an agile team thrive working in a virtual, distributed way?</p>
+    </div>
+
+    <div class="panel-footer">
+      <div class="post-metadata">
+        
+          <time class="post-date" datetime="Jun 07, 2022">Jun 07, 2022</time>
+          
+        
+      </div>
+      <div class="read-more">
+        <a href="/blog/scrum-remote-teams-success-five-ways-to-have-all-three" class="button-small button-ghost">Read</a>
+      </div>
+    </div>
+
+  </div>
+</article>
+      </div>
+
+    
+
+    
+
+    
+
+  
+
+
+    
+
+    
+
+      
+      
+
+      <div class="grid-item">
+        
+
+<article class="panel content-article-panel ">
+
+  <div class="panel-header no-padding">
+
+    <a href="/blog/announcing-the-new-agile-mentors-podcast"
+       class="block-link panel-photo-header panel-asset-header panel-blog-header ">
+      
+      <img src="/images/made/uploads/blog/2022-05-31-podcast-announcement_600_314.png" alt="Announcing the New Agile Mentors Podcast" width="600" height="314" />
+    </a>
+  </div>
+
+  <div class="panel-body">
+    <h3><a href="/blog/announcing-the-new-agile-mentors-podcast" class="unstyled-link-with-hover">Announcing the New Agile Mentors Podcast</a></h3>
+    
+    <div class="post-teaser">
+      <p>Don&rsquo;t miss this new podcast from the Scrum and agile experts at Mountain Goat Software.&nbsp;</p>
+    </div>
+
+    <div class="panel-footer">
+      <div class="post-metadata">
+        
+          <time class="post-date" datetime="May 31, 2022">May 31, 2022</time>
+          
+        
+      </div>
+      <div class="read-more">
+        <a href="/blog/announcing-the-new-agile-mentors-podcast" class="button-small button-ghost">Read</a>
+      </div>
+    </div>
+
+  </div>
+</article>
+      </div>
+
+    
+
+    
+
+    
+
+  
+
+
+    
+
+    
+
+      
+      
+
+      <div class="grid-item">
+        
+
+<article class="panel content-article-panel ">
+
+  <div class="panel-header no-padding">
+
+    <a href="/blog/four-reasons-agile-teams-estimate-product-backlog-items"
+       class="block-link panel-photo-header panel-asset-header panel-blog-header ">
+      
+      <img src="/images/made/uploads/blog/2022-05-10-four-reasons-agile-teams-estimate-product-backlog-items_600_314.png" alt="Four Reasons Agile Teams Estimate Product Backlog Items" width="600" height="314" />
+    </a>
+  </div>
+
+  <div class="panel-body">
+    <h3><a href="/blog/four-reasons-agile-teams-estimate-product-backlog-items" class="unstyled-link-with-hover">Four Reasons Agile Teams Estimate Product Backlog Items</a></h3>
+    
+    <div class="post-teaser">
+      <p>Estimating product backlog items provides benefits beyond predicting when a project will be finished.</p>
+    </div>
+
+    <div class="panel-footer">
+      <div class="post-metadata">
+        
+          <time class="post-date" datetime="May 17, 2022">May 17, 2022</time>
+          
+        
+      </div>
+      <div class="read-more">
+        <a href="/blog/four-reasons-agile-teams-estimate-product-backlog-items" class="button-small button-ghost">Read</a>
+      </div>
+    </div>
+
+  </div>
+</article>
+      </div>
+
+    
+
+    
+
+    
+
+  
+
+
+    
+
+    
+
+      
+      
+
+      <div class="grid-item">
+        
+
+<article class="panel content-article-panel ">
+
+  <div class="panel-header no-padding">
+
+    <a href="/blog/seven-tips-for-running-a-virtual-daily-scrum"
+       class="block-link panel-photo-header panel-asset-header panel-blog-header ">
+      
+      <img src="/images/made/uploads/blog/2021-05-01-seven-tips-for-running-virtual-daily-scrum_600_314.png" alt="Seven Tips for Running a Virtual Daily Scrum" width="600" height="314" />
+    </a>
+  </div>
+
+  <div class="panel-body">
+    <h3><a href="/blog/seven-tips-for-running-a-virtual-daily-scrum" class="unstyled-link-with-hover">Seven Tips for Running a Virtual Daily Scrum</a></h3>
+    
+    <div class="post-teaser">
+      <p>How do you effectively facilitate a daily scrum with a remote team?</p>
+    </div>
+
+    <div class="panel-footer">
+      <div class="post-metadata">
+        
+          <time class="post-date" datetime="May 03, 2022">May 03, 2022</time>
+          
+        
+      </div>
+      <div class="read-more">
+        <a href="/blog/seven-tips-for-running-a-virtual-daily-scrum" class="button-small button-ghost">Read</a>
+      </div>
+    </div>
+
+  </div>
+</article>
+      </div>
+
+    
+
+    
+
+    
+
+  
+
+
+    
+
+    
+
+      
+      
+
+      <div class="grid-item">
+        
+
+<article class="panel content-article-panel ">
+
+  <div class="panel-header no-padding">
+
+    <a href="/blog/what-is-a-high-performing-agile-team"
+       class="block-link panel-photo-header panel-asset-header panel-blog-header ">
+      
+      <img src="/images/made/uploads/blog/what-is-a-high-performing-team_600_314.gif" alt="What Is a High-Performing Agile Team?" width="600" height="314" />
+    </a>
+  </div>
+
+  <div class="panel-body">
+    <h3><a href="/blog/what-is-a-high-performing-agile-team" class="unstyled-link-with-hover">What Is a High-Performing Agile Team?</a></h3>
+    
+    <div class="post-teaser">
+      <p>How to build and sustain a Scrum team that exceeds the sum of its parts.</p>
+    </div>
+
+    <div class="panel-footer">
+      <div class="post-metadata">
+        
+          <time class="post-date" datetime="Apr 19, 2022">Apr 19, 2022</time>
+          
+        
+      </div>
+      <div class="read-more">
+        <a href="/blog/what-is-a-high-performing-agile-team" class="button-small button-ghost">Read</a>
+      </div>
+    </div>
+
+  </div>
+</article>
+      </div>
+
+    
+
+    
+
+    
+
+  
+
+
+    
+
+    
+
+      
+      
+
+      <div class="grid-item">
+        
+
+<article class="panel content-article-panel ">
+
+  <div class="panel-header no-padding">
+
+    <a href="/blog/what-does-scrum-mean-by-cross-functional-teams"
+       class="block-link panel-photo-header panel-asset-header panel-blog-header ">
+      
+      <img src="/images/made/uploads/blog/2022-04-05-what-does-scrum-mean-cross-functional_600_314.png" alt="What Does Scrum Mean by Cross Functional Teams?" width="600" height="314" />
+    </a>
+  </div>
+
+  <div class="panel-body">
+    <h3><a href="/blog/what-does-scrum-mean-by-cross-functional-teams" class="unstyled-link-with-hover">What Does Scrum Mean by Cross Functional Teams?</a></h3>
+    
+    <div class="post-teaser">
+      <p>What exactly does cross functional mean and why does it matter?</p>
+    </div>
+
+    <div class="panel-footer">
+      <div class="post-metadata">
+        
+          <time class="post-date" datetime="Apr 05, 2022">Apr 05, 2022</time>
+          
+        
+      </div>
+      <div class="read-more">
+        <a href="/blog/what-does-scrum-mean-by-cross-functional-teams" class="button-small button-ghost">Read</a>
+      </div>
+    </div>
+
+  </div>
+</article>
+      </div>
+
+    
+
+    
+
+    
+
+  
+
+
+    
+
+    
+
+      
+      
+
+      <div class="grid-item">
+        
+
+<article class="panel content-article-panel ">
+
+  <div class="panel-header no-padding">
+
+    <a href="/blog/announcing-agile-nfts"
+       class="block-link panel-photo-header panel-asset-header panel-blog-header ">
+      
+      <img src="/images/made/uploads/blog/2022-03-31-announcing-agile-nfts_600_314.png" alt="Announcing Agile NFTs" width="600" height="314" />
+    </a>
+  </div>
+
+  <div class="panel-body">
+    <h3><a href="/blog/announcing-agile-nfts" class="unstyled-link-with-hover">Announcing Agile NFTs</a></h3>
+    
+    <div class="post-teaser">
+      <p>Finally&ndash;agile NFTs are here. Check them out before they&rsquo;re gone.</p>
+    </div>
+
+    <div class="panel-footer">
+      <div class="post-metadata">
+        
+          <time class="post-date" datetime="Mar 31, 2022">Mar 31, 2022</time>
+          
+        
+      </div>
+      <div class="read-more">
+        <a href="/blog/announcing-agile-nfts" class="button-small button-ghost">Read</a>
+      </div>
+    </div>
+
+  </div>
+</article>
+      </div>
+
+    
+
+    
+
+    
+
+  
+
+
+    
+
+    
+
+      
+      
+
+      <div class="grid-item">
+        
+
+<article class="panel content-article-panel ">
+
+  <div class="panel-header no-padding">
+
+    <a href="/blog/how-implementation-intentions-help-my-sprints"
+       class="block-link panel-photo-header panel-asset-header panel-blog-header ">
+      
+      <img src="/images/made/uploads/blog/how-implementation-intentions-help_600_314.gif" alt="How Implementation Intentions Help My Sprints" width="600" height="314" />
+    </a>
+  </div>
+
+  <div class="panel-body">
+    <h3><a href="/blog/how-implementation-intentions-help-my-sprints" class="unstyled-link-with-hover">How Implementation Intentions Help My Sprints</a></h3>
+    
+    <div class="post-teaser">
+      <p>Planning an exact time to do something within a sprint helps make sure you get the important stuff &hellip;</p>
+    </div>
+
+    <div class="panel-footer">
+      <div class="post-metadata">
+        
+          <time class="post-date" datetime="Mar 22, 2022">Mar 22, 2022</time>
+          
+        
+      </div>
+      <div class="read-more">
+        <a href="/blog/how-implementation-intentions-help-my-sprints" class="button-small button-ghost">Read</a>
+      </div>
+    </div>
+
+  </div>
+</article>
+      </div>
+
+    
+
+    
+        </div>
+      </section>
+    
+
+    
+
+  
+      <div class="container"><nav class="pagination">
+  
+  <a href="https://www.mountaingoatsoftware.com/blog/P12" class="paginate-next icon-next">Older Posts</a>
+</nav>
+
+</div>
+    
+
+
+
+    </div>
+
+      <footer role="contentinfo" class="site-footer ">
+        <nav class="footer-nav">
+          <div class="container">
+            <div class="footer-nav-block">
+              <h4>Learn About Agile</h4>
+              <ul>
+                <li><a href="/agile/new-to-agile-or-scrum">New to Agile and Scrum?</a></li>
+                <li><a href="/agile/scrum">Scrum</a></li>
+                <li><a href="/agile/user-stories">User Stories</a></li>
+                <li><a href="/agile/planning-poker">Planning Poker</a></li>
+                <li><a href="/agile/transitioning-to-agile">Agile Software Development</a></li>
+                <li><a href="/agile/agile-project-management">Agile Project Management</a></li>
+                <li><a href="/blog/tag/presentations">Agile Presentations</a></li>
+                <li><a href="/agile/podcast">Agile Mentors Podcast</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-block">
+              <h4>Agile &amp; Scrum Training</h4>
+              <ul>
+                <li><a href="/training/online-certification">Online Certifications</a></li>
+                <li><a href="/training/video">Video Courses</a></li>
+                <li><a href="/training/in-person">In-Person Certifications</a></li>
+                <li><a href="/training/onsite">On-Site Courses</a></li>
+                <li><a href="/training/schedule">Training Schedule</a></li>
+                <li><a href="/training/compare">Compare Courses</a></li>
+                <li><a href="/training/pdus-and-seus">PDUs and SEUs</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-block">
+              <h4>More&hellip;</h4>
+              <ul>
+                <li><a href="/company/about-mike-cohn">About Us</a></li>
+                <li><a href="/company/general-inquiries">Contact Us</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/books">Books by Mike Cohn</a></li>
+                <li><a href="/tools">Agile Tools</a></li>
+              </ul>
+            </div>
+            <p>
+              <a class="button button-large button-shadow" href="/email-tips" onclick="_gaq.push(['_trackEvent', 'Newsletter', 'SignUpClick', 'Footer Weekly Tips']);">Get Weekly Email Tips</a>
+            </p>
+          </div>
+        </nav>
+
+        <div class="container">
+          <div class="logo-footer">
+            <img src="/mgs_assets/images/v4/logo-footer.svg" alt="Mountain Goat Software">
+          </div>
+
+          <div class="footer-info-nav">
+            <span class='copyright'>Copyright &copy;1998-2022 Mountain Goat Software. All Rights Reserved.</span>
+            <ul>
+              <li><a href="/company/general-inquiries">Contact Us</a></li>
+              <li><a href="/terms-of-use">Terms and Conditions</a></li>
+              <li><a href="/privacy-statement">Privacy Policy</a></li>
+              <li><a href="/company/commenting-policy">Commenting Policy</a></li>
+              <li><a href="https://help.mountaingoatsoftware.com">Help</a></li>
+            </ul>
+          </div>
+
+          <div class="social-media">
+            <a rel="nofollow" href="https://twitter.com/mikewcohn" style="position: relative; top: .1em;"><svg width="23" height="19" viewBox="0 0 23 19" xmlns="http://www.w3.org/2000/svg"><path d="M22.778 2.942c-.817.366-1.676.613-2.6.72.945-.558 1.654-1.45 1.987-2.503-.86.515-1.836.89-2.846 1.095C18.47 1.395 17.3.837 16 .837c-2.493 0-4.502 2.01-4.502 4.5 0 .355.022.72.097 1.043-3.738-.204-7.047-1.9-9.292-4.63-.376.666-.612 1.354-.612 2.19 0 1.548.796 2.923 2.02 3.74-.74-.022-1.428-.226-2.04-.56v.055c0 2.19 1.557 4.017 3.62 4.426-.387.108-.795.162-1.204.162-.28 0-.558-.033-.838-.086.56 1.783 2.246 3.115 4.2 3.136-1.525 1.225-3.49 2.138-5.596 2.138-.365 0-.72-.02-1.074-.075 1.987 1.278 4.383 1.837 6.928 1.837 8.293 0 12.827-6.875 12.827-12.837v-.59c.87-.635 1.632-1.42 2.245-2.343z" fill="#FFF" fill-rule="evenodd"/></svg></a>
+            <a rel="nofollow" href="https://www.facebook.com/MountainGoatSoftware"><svg width="12" height="22" viewBox="0 0 12 22" xmlns="http://www.w3.org/2000/svg"><path d="M3.028 22h4.125V11.913h3.845l.28-3.663H7.153V5.5c0-1.074.204-1.837 1.6-1.837h2.374l.15-3.46S10.086 0 8.528 0c-3.866 0-5.5 2.45-5.5 5.038V8.25H.278v3.663h2.75V22z" fill="#FFF" fill-rule="evenodd"/></svg></a>
+            <a rel="nofollow" href="https://www.linkedin.com/company/mountain-goat-software"><svg width="23" height="22" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg"><path d="M1.24 7.788V22h4.576V7.788H1.24zm11.913 5.962c0-1.837 1.17-2.75 2.546-2.75 1.374 0 2.49.913 2.49 3.212V22h4.588v-8.25c0-4.125-2.288-6.413-5.5-6.413-1.837 0-3.212 1.042-4.125 2.417l-.15-1.966H8.49c0 .483.076 3.212.076 3.212v11h4.587v-8.25zM3.506 5.5c1.698 0 2.772-1.117 2.772-2.524C6.256 1.558 5.204.462 3.548.462 1.874.462.78 1.558.78 2.976.778 4.383 1.852 5.5 3.474 5.5h.032z" fill="#FFF" fill-rule="evenodd"/></svg></a>
+            <a rel="nofollow" href="https://www.youtube.com/c/MountainGoatSoftware" style="position: relative; top: .2em;"><svg width="23" height="16" viewBox="0 0 23 16" xmlns="http://www.w3.org/2000/svg"><path d="M11.778.212c11 0 11 0 11 7.788s0 7.788-11 7.788-11 0-11-7.788 0-7.788 11-7.788zm-2.75 11.913L15.903 8 9.028 3.875v8.25z" fill="#FFF" fill-rule="evenodd"/></svg></a>
+          </div>
+        </div>
+      </footer>
+
+    </div><!-- /.wrapper -->
+
+    <!-- Javascripts -->
+<script src="/build/javascripts/main.0622180942.js"></script>
+
+<noscript>JavaScript is disabled. Library was not loaded.</noscript>
+
+    
+
+  </body>
+</html>
+
+
+    
+
