@@ -1,7 +1,7 @@
 #Задайте список. Напишите программу, которая определит, присутствует ли в заданном списке строк некое число.
 
 from multiprocessing.sharedctypes import Value
-import library as l
+import ongoing_experiments.library as l
 
 def countListNumericalElements(user_list):
     number_counter = 0
