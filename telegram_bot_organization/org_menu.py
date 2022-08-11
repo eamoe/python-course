@@ -1,5 +1,3 @@
-import org_constants
-
 def show_menu():
     menu_str = ""
     menu_str += "Департаменты\n".upper()
@@ -21,7 +19,3 @@ def show_menu():
     menu_str += "/deletesalary" + " - " + "удалить" + "\n"
     
     return menu_str
-
-
-def menu_handler():
-    return 'Chosen menu item'

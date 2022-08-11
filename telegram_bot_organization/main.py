@@ -3,7 +3,6 @@ import time
 import api_keys as keys
 from telegram.ext import *
 import responses as responses
-import org_constants
 import org_menu
 
 
@@ -19,7 +18,7 @@ def help_command(update, context):
 
 
 def org_command(update, context):
-    update.message.reply_text(org_constants.open_header.upper())
+    update.message.reply_text('Организация'.upper())
     update.message.reply_text(org_menu.show_menu())
 
 

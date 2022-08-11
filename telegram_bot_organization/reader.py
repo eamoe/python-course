@@ -56,7 +56,7 @@ def read_employees(path):
 
 def get_dept_name(dept_id):
     dept_name = f"запись {dept_id} не найдена"
-    path = 'organization/' + "departments" + '.csv'
+    path = 'telegram_bot_organization/' + "departments" + '.csv'
     data = open(path, 'r')
     for line in data:
         line = line.replace("\n", "")
@@ -69,7 +69,7 @@ def get_dept_name(dept_id):
 
 def get_salary_amount(salary_id):
     dept_name = f"запись {salary_id} не найдена"
-    path = 'organization/' + "salaries" + '.csv'
+    path = 'telegram_bot_organization/' + "salaries" + '.csv'
     data = open(path, 'r')
     for line in data:
         line = line.replace("\n", "")
