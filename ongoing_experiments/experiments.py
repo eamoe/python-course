@@ -1,6 +1,15 @@
 from ast import Str
 
+# Sorting a dictionary by value
+xs = {'a': 4, 'b': 3, 'c': 2, 'd': 1}
+reversed = sorted(xs.items(), key=lambda x: x[1])
+print(reversed)
+# Another way to sort a dictionary by value
+import operator
+reversed = sorted(xs.items(), key=operator.itemgetter(1))
+print(reversed)
 
+exit()
 string = "sdhfsdjhfabcefjwewkeabcwejfkwe12435abcwejwejfabcerjeabc"
 print(len(string))
 result = string.split("abc")
@@ -10,7 +19,6 @@ for element in result:
 
 print(result_str)
 print(len(result_str))
-exit()
 
 #Unpacking data
 #requires checking for mismatches in number of elements
