@@ -19,10 +19,6 @@ def help_command(update, context):
     update.message.reply_text('If you need help, you should ask for it on Google!')
 
 
-def dictionary_command(update, context):
-    update.message.reply_text("Let's find definitions!")
-
-
 def play_command(update, context):
     # Explain game rules
     update.message.reply_text(messages.play_command_response)
