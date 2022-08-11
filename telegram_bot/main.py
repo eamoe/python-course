@@ -37,6 +37,10 @@ def play_command(update, context):
                                               max_take)
 
 
+def org_command(update, context):
+    update.message.reply_text('Organization database!')
+
+
 def handle_message(update, context):
     text = str(update.message.text).lower()
     response = responses.sample_responses(text)
@@ -55,6 +59,7 @@ def main():
     dp.add_handler(CommandHandler("Start", start_command))
     dp.add_handler(CommandHandler("Help", help_command))
     dp.add_handler(CommandHandler("Play", play_command))
+    dp.add_handler(CommandHandler("Organization", org_command))
 
     dp.add_handler(MessageHandler(Filters.text, handle_message))
     dp.add_error_handler(error)
