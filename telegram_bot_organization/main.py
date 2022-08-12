@@ -10,7 +10,7 @@ print("Bot started...")
 
 
 def start_command(update, context):
-    update.message.reply_text('Type something random to get started!')
+    update.message.reply_text('Организация'.upper())
 
 
 def help_command(update, context):
@@ -18,7 +18,6 @@ def help_command(update, context):
 
 
 def org_command(update, context):
-    update.message.reply_text('Организация'.upper())
     update.message.reply_text(org_menu.show_menu())
 
 

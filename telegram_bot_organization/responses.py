@@ -3,6 +3,7 @@ import creator
 import reader
 import action
 import remover
+import updater
 
 
 
@@ -38,6 +39,17 @@ def sample_responses(input_text):
         return response
     if user_message in ("/deleteemployee") or global_action == "get_employee_id":
         response = remover.delete_item("employees", global_action, user_message)
+        return response
+
+    # Update item
+    if user_message in ("/updatedepartment") or global_action in ["get_dept_id_upd", "get_dept_name_upd"]:
+        response = updater.update_item("departments", global_action, user_message)
+        return response
+    if user_message in ("/updatesalary") or global_action in ["get_salary_id_upd", "get_salary_amount_upd"]:
+        response = updater.update_item("salaries", global_action, user_message)
+        return response
+    if user_message in ("/updateemployee") or global_action in ["update_last_name", "update_first_name", "update_middle_name", "update_dept_name", "update_salary_amount", "update_employee"]:
+        response = updater.update_item("employees", global_action, user_message)
         return response
 
     return "I don't understand you!"
