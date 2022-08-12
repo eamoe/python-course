@@ -1,8 +1,8 @@
 from datetime import datetime
-from operator import is_
 import creator
 import reader
 import action
+import remover
 
 
 
@@ -27,6 +27,17 @@ def sample_responses(input_text):
         return response
     if user_message in ("/createemployee") or global_action in ["add_first_name", "add_middle_name", "add_dept_name", "add_salary_amount", "create_employee"]:
         response = creator.create_item("employees", global_action, user_message)
+        return response
+    
+    # Delete item
+    if user_message in ("/deletedepartment") or global_action == "get_dept_id":
+        response = remover.delete_item("departments", global_action, user_message)
+        return response
+    if user_message in ("/deletesalary") or global_action == "get_salary_id":
+        response = remover.delete_item("salaries", global_action, user_message)
+        return response
+    if user_message in ("/deleteemployee") or global_action == "get_employee_id":
+        response = remover.delete_item("employees", global_action, user_message)
         return response
 
     return "I don't understand you!"
