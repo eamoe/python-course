@@ -13,7 +13,6 @@ def sample_responses(input_text):
     # Show items
     if user_message in ("/showdepartments"):
         return reader.show_items("departments")
-
     if user_message in ("/showsalaries"):
         return reader.show_items("salaries")
     if user_message in ("/showemployees"):
@@ -26,6 +25,8 @@ def sample_responses(input_text):
     if user_message in ("/createsalary") or global_action == "create_salary":
         response = creator.create_item("salaries", global_action, user_message)
         return response
-
+    if user_message in ("/createemployee") or global_action in ["add_first_name", "add_middle_name", "add_dept_name", "add_salary_amount", "create_employee"]:
+        response = creator.create_item("employees", global_action, user_message)
+        return response
 
     return "I don't understand you!"

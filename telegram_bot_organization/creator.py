@@ -5,7 +5,7 @@ import action
 
 def generate_id():
     return get_unique_id(length = 5,
-                        excluded_chars="{%!#}*->$;@~:&,^_<[]`=/'\?.()|+")
+                        excluded_chars="{%!#}*->$;@~:&,^_<[]`=/'\?.()|+ABCDEFGHIJKLMNOPQRSTUVWXYZ")
 
 
 def create_item(file_name, global_action, user_message):
@@ -54,21 +54,53 @@ def create_salary(path, global_action, user_message):
     return response_str
 
 
-def create_employee(path):
-    print("Добавление сотрудника".upper())
-    employee_id = generate_id()
-    last_name = input("Фамилия: ")
-    first_name = input("Имя: ")
-    middle_name = input("Отчество: ")
-    print("\nСписок департаментов".upper())
-    reader.show_items("departments")
-    department_id = input("Введите код департамента: ")
-    print("\nСписок окладов".upper())
-    reader.show_items("salaries")
-    salary_id = input("Введите код оклада: ")
-    created = str(dt.now().date()) + ' ' + str(dt.now().strftime('%H:%M:%S'))
-    updated = str(dt.now().date()) + ' ' + str(dt.now().strftime('%H:%M:%S'))
-    with open(path, 'a') as file:
-        file.write('{};{};{};{};{};{};{};{}\n'
-                    .format(employee_id, last_name, first_name, middle_name, department_id, salary_id, created, updated))
-    return f"Создана новая запись в справочнике сотрудников:\n\nID: {employee_id}\nФамилия: {last_name}\nИмя: {first_name}\nОтчество: {middle_name}\nКод департамента: {department_id}\nКод оклада: {salary_id}"
+def create_employee(path, global_action, user_message):
+    response_str = ""
+    if global_action == "":
+        action.write_temp_data("")
+        action.set_action("add_first_name")
+        return f"Укажите фамилию"
+    elif global_action == "add_first_name":
+        temp_data = action.read_temp_data() + user_message + ';'
+        action.write_temp_data(temp_data)
+        action.set_action("add_middle_name")
+        return f"Укажите имя"
+    elif global_action == "add_middle_name":
+        temp_data = action.read_temp_data() + user_message + ';'
+        action.write_temp_data(temp_data)
+        action.set_action("add_dept_name")
+        return f"Укажите отчество"
+    elif global_action == "add_dept_name":
+        temp_data = action.read_temp_data() + user_message + ';'
+        action.write_temp_data(temp_data)
+        action.set_action("add_salary_amount")
+        response_str += f"\nСписок департаментов\n\n".upper()
+        response_str += reader.show_items("departments")
+        response_str += "Введите ID департамента:"
+        return response_str
+    elif global_action == "add_salary_amount":
+        temp_data = action.read_temp_data() + user_message + ';'
+        action.write_temp_data(temp_data)
+        action.set_action("create_employee")
+        response_str += f"\nСписок окладов\n\n".upper()
+        response_str += reader.show_items("salaries")
+        response_str += "Введите ID оклада:"
+        return response_str
+    elif global_action == "create_employee":
+        temp_data = action.read_temp_data() + user_message + ';'
+        temp_data_list = str(temp_data).split(";")
+        last_name = temp_data_list[0]
+        first_name = temp_data_list[1]
+        middle_name = temp_data_list[2]
+        department_id = temp_data_list[3]
+        salary_id = temp_data_list[4]
+        action.write_temp_data("")
+        employee_id = generate_id()
+        created = str(dt.now().date()) + ' ' + str(dt.now().strftime('%H:%M:%S'))
+        updated = str(dt.now().date()) + ' ' + str(dt.now().strftime('%H:%M:%S'))
+        with open(path, 'a') as file:
+            file.write('{};{};{};{};{};{};{};{}\n'
+                        .format(employee_id, last_name, first_name, middle_name, department_id, salary_id, created, updated))
+            response_str = f"Создана новая запись в справочнике сотрудников:\nID: {employee_id}\nФамилия: {last_name}\nИмя: {first_name}\nОтчество: {middle_name}\nКод департамента: {department_id}\nКод оклада: {salary_id}"
+        action.set_action("")
+        return response_str
