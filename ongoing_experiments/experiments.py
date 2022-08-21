@@ -5,6 +5,25 @@ import requests
 import os
 from colorama import Fore, Back, Style
 
+# STRINGS
+
+# Slicing Strings
+some_string = "abcdefghijklmnopqrstuvwxyz"
+three_first_letters = some_string[0] + some_string[1] + some_string[2]
+print(three_first_letters)
+print(some_string[0:3])
+print(some_string[-26:0])
+# [0:3] part is called a slice.
+# [-26:0] returns an empty string because both values correspond to the same character.
+# Strings are immutable, which means that you cannot changes them once being created.
+
+# Removing Whitespaces
+some_string = "\nabc  defghijklmnopqrs tuvwxyz\t"
+print(some_string.rstrip().lstrip())
+print(some_string.strip())
+
+exit()
+
 app_id = "c7421794"
 app_key = "4bd934700afdd3bab496f650ab649bd4"
 
